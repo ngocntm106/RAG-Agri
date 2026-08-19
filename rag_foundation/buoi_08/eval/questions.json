@@ -1,0 +1,58 @@
+[
+  {
+    "query_id": "Q01",
+    "question": "Quy định về cơ cấu lại thời hạn trả nợ cho khách hàng theo Thông tư 02/2023/TT-NHNN như thế nào?",
+    "relevant_chunk_ids": ["ADV_01", "ADV_02"],
+    "scope": "in_scope",
+    "needs_human_review": true
+  },
+  {
+    "query_id": "Q02",
+    "question": "Điều kiện để ngân hàng thương mại thỏa thuận về mức lãi suất cho vay ngắn hạn bằng đồng Việt Nam là gì?",
+    "relevant_chunk_ids": ["ADV_03"],
+    "scope": "in_scope",
+    "needs_human_review": true
+  },
+  {
+    "query_id": "Q03",
+    "question": "Nguyên tắc thỏa thuận lãi suất cho vay giữa tổ chức tín dụng và khách hàng theo Thông tư 39/2016/TT-NHNN?",
+    "relevant_chunk_ids": ["ADV_04"],
+    "scope": "in_scope",
+    "needs_human_review": true
+  },
+  {
+    "query_id": "Q04",
+    "question": "Chính sách lùi thời hạn thanh toán nợ gốc và nợ lãi tiền vay cho doanh nghiệp khó khăn?",
+    "relevant_chunk_ids": ["ADV_05", "ADV_06"],
+    "scope": "in_scope",
+    "needs_human_review": true
+  },
+  {
+    "query_id": "Q05",
+    "question": "Ngân hàng có được cho vay để mua cổ phần công ty cổ phần chưa niêm yết không?",
+    "relevant_chunk_ids": ["ADV_07"],
+    "scope": "in_scope",
+    "needs_human_review": true
+  },
+  {
+    "query_id": "Q06",
+    "question": "Cách làm bánh mì truyền thống cần những nguyên liệu gì và nhào bột trong bao lâu?",
+    "relevant_chunk_ids": ["ADV_08"],
+    "scope": "out_of_scope",
+    "needs_human_review": true
+  },
+  {
+    "query_id": "Q07",
+    "question": "Dự báo thời tiết Hà Nội tuần tới có mưa rào không?",
+    "relevant_chunk_ids": [],
+    "scope": "out_of_scope",
+    "needs_human_review": true
+  },
+  {
+    "query_id": "Q08",
+    "question": "Quy tắc tính điểm môn bóng đá nam tại SEA Games như thế nào?",
+    "relevant_chunk_ids": [],
+    "scope": "out_of_scope",
+    "needs_human_review": true
+  }
+]

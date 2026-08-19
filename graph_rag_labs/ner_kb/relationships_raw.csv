@@ -1,0 +1,1054 @@
+source,target,relationship_type,method,confidence,evidence
+166170,CoQuan_quoc_hoi,BAN_HANH_BOI,raw,1.0,Raw metadata value: Quốc hội
+133858,NguoiKy_nguyen_xuan_phuc,KY_BOI,raw,1.0,Raw metadata value: Nguyễn Xuân Phúc
+133858,CoQuan_chinh_phu,BAN_HANH_BOI,raw,1.0,Raw metadata value: Chính phủ
+95652,CoQuan_chinh_phu,BAN_HANH_BOI,raw,1.0,Raw metadata value: Chính phủ
+169221,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+169221,NguoiKy_pham_thanh_ha,KY_BOI,raw,1.0,Raw metadata value: Phạm Thanh Hà
+95652,NguoiKy_nguyen_tan_dung,KY_BOI,raw,1.0,Raw metadata value: Nguyễn Tấn Dũng
+169221,LinhVuc_quan_ly_ngoai_hoi,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Quản lý ngoại hối
+173460,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+30402,LinhVuc_quan_ly_dich_vu_tai_chinh_va_cac_qu,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Quản lý dịch vụ tài chính và các quỹ tài chính
+173460,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+30402,CoQuan_bo_tai_chinh,BAN_HANH_BOI,raw,1.0,Raw metadata value: Bộ Tài chính
+f69936f0-6937-11f1-a48d-29bc6b0fd706,CoQuan_bo_tai_chinh,BAN_HANH_BOI,raw,1.0,Raw metadata value: Bộ Tài chính
+f69936f0-6937-11f1-a48d-29bc6b0fd706,NguoiKy_nguyen_uc_chi,KY_BOI,raw,1.0,Raw metadata value: Nguyễn Đức Chi
+30402,NguoiKy_tran_xuan_ha,KY_BOI,raw,1.0,Raw metadata value: Trần Xuân Hà
+26750,NguoiKy_nguyen_phu_trong,KY_BOI,raw,1.0,Raw metadata value: Nguyễn Phú Trọng
+163441,LinhVuc_bao_hiem,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Bảo hiểm
+163441,CoQuan_chinh_phu,BAN_HANH_BOI,raw,1.0,Raw metadata value: Chính phủ
+146468,NguoiKy_nguyen_xuan_phuc,KY_BOI,raw,1.0,Raw metadata value: Nguyễn Xuân Phúc
+146468,LinhVuc_chung_khoan,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Chứng khoán
+146468,CoQuan_chinh_phu,BAN_HANH_BOI,raw,1.0,Raw metadata value: Chính phủ
+163441,NguoiKy_le_minh_khai,KY_BOI,raw,1.0,Raw metadata value: Lê Minh Khái
+38128,NguoiKy_ao_minh_tu,KY_BOI,raw,1.0,Raw metadata value: Đào Minh Tú
+38128,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+26750,CoQuan_quoc_hoi,BAN_HANH_BOI,raw,1.0,Raw metadata value: Quốc hội
+38128,LinhVuc_phat_hanh_va_kho_quy,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Phát hành và kho quỹ
+112025,CoQuan_chinh_phu,BAN_HANH_BOI,raw,1.0,Raw metadata value: Chính phủ
+112025,NguoiKy_nguyen_xuan_phuc,KY_BOI,raw,1.0,Raw metadata value: Nguyễn Xuân Phúc
+166170,LinhVuc_tin_dung,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Tín dụng
+166170,NguoiKy_vuong_inh_hue,KY_BOI,raw,1.0,Raw metadata value: Vương Đình Huệ
+168220,NguoiKy_ao_minh_tu,KY_BOI,raw,1.0,Raw metadata value: Đào Minh Tú
+168220,LinhVuc_thanh_tra_giam_sat_ngan_hang,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Thanh tra, giám sát ngân hàng"
+168220,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+143217,CoQuan_bo_tai_chinh,BAN_HANH_BOI,raw,1.0,Raw metadata value: Bộ Tài chính
+168859,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+168859,NguoiKy_ao_minh_tu,KY_BOI,raw,1.0,Raw metadata value: Đào Minh Tú
+168859,LinhVuc_thanh_tra_giam_sat_ngan_hang,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Thanh tra, giám sát ngân hàng"
+173695,LinhVuc_thanh_tra_giam_sat_ngan_hang,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Thanh tra, giám sát ngân hàng"
+164719,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+164719,LinhVuc_thanh_tra_giam_sat_ngan_hang,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Thanh tra, giám sát ngân hàng"
+173695,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+173695,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+150974,NguoiKy_ta_anh_tuan,KY_BOI,raw,1.0,Raw metadata value: Tạ Anh Tuấn
+150974,LinhVuc_ke_toan_kiem_toan,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Kế toán, kiểm toán"
+164719,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+185630,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+177271,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+177271,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+44209,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+177271,LinhVuc_cuc_an_toan_he_thong_cac_to_chuc_ti,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Cục An toàn hệ thống các tổ chức tín dụng
+25692,CoQuan_quoc_hoi,BAN_HANH_BOI,raw,1.0,Raw metadata value: Quốc hội
+25692,NguoiKy_nguyen_phu_trong,KY_BOI,raw,1.0,Raw metadata value: Nguyễn Phú Trọng
+44209,LinhVuc_phat_hanh_va_kho_quy,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Phát hành và kho quỹ
+44209,NguoiKy_ao_minh_tu,KY_BOI,raw,1.0,Raw metadata value: Đào Minh Tú
+117310,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+117310,NguoiKy_nguyen_ong_tien,KY_BOI,raw,1.0,Raw metadata value: Nguyễn Đồng Tiến
+117310,LinhVuc_thanh_tra_giam_sat_ngan_hang,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Thanh tra, giám sát ngân hàng"
+166269,NguoiKy_vuong_inh_hue,KY_BOI,raw,1.0,Raw metadata value: Vương Đình Huệ
+166269,CoQuan_quoc_hoi,BAN_HANH_BOI,raw,1.0,Raw metadata value: Quốc hội
+185630,LinhVuc_lao_ong_tien_luong_tien_cong,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Lao động, tiền lương, tiền công"
+185630,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+150974,CoQuan_bo_tai_chinh,BAN_HANH_BOI,raw,1.0,Raw metadata value: Bộ Tài chính
+174218,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+174218,LinhVuc_thanh_tra_giam_sat_ngan_hang,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Thanh tra, giám sát ngân hàng"
+174218,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+186888,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+186888,LinhVuc_cuc_an_toan_he_thong_cac_to_chuc_ti,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Cục An toàn hệ thống các tổ chức tín dụng
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+186888,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+112924,CoQuan_bo_tai_chinh,BAN_HANH_BOI,raw,1.0,Raw metadata value: Bộ Tài chính
+186482,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+186482,LinhVuc_cuc_an_toan_he_thong_cac_to_chuc_ti,THUOC_LINH_VUC,raw,1.0,Raw metadata value: Cục An toàn hệ thống các tổ chức tín dụng
+112924,NguoiKy_tran_xuan_ha,KY_BOI,raw,1.0,Raw metadata value: Trần Xuân Hà
+186482,NguoiKy_oan_thai_son,KY_BOI,raw,1.0,Raw metadata value: Đoàn Thái Sơn
+27257,NguoiKy_tran_minh_tuan,KY_BOI,raw,1.0,Raw metadata value: Trần Minh Tuấn
+27257,CoQuan_ngan_hang_nha_nuoc_viet_nam,BAN_HANH_BOI,raw,1.0,Raw metadata value: Ngân hàng Nhà nước Việt Nam
+173460,LinhVuc_thanh_tra_giam_sat_ngan_hang,THUOC_LINH_VUC,raw,1.0,"Raw metadata value: Thanh tra, giám sát ngân hàng"
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,173695,THAM_CHIEU,rules,0.9,(Ban hành kèm theo Thông tư số 56/2024/TT-NHNN ngày 24 tháng 12 năm 2024 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định
+185630,25692,THAM_CHIEU,rules,0.9,Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12;
+185630,166269,THAM_CHIEU,rules,0.9,Căn cứ Luật Hợp tác xã số 17/2023/QH15;
+186482,174218,THAM_CHIEU,rules,0.9,SỐ 62/2024/TT-NHNN CỦA THỐNG ĐỐC NGÂN HÀNG NHÀ NƯỚC VIỆT
+186888,166170,SUA_DOI_BO_SUNG,rules,0.9,"Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15 được sửa đổi, bổ sung bởi Luật số 96/2025/QH15;"
+186888,27257,THAM_CHIEU,rules,0.9,"2. Thông tư này bãi bỏ Thông tư số 44/2011/TT-NHNN ngày 29 tháng 12 năm 2011 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định về hệ thống kiểm soát nội bộ và kiểm toán nội bộ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài."
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,173695,SUA_DOI_BO_SUNG,rules,0.9,"Thông tư số 56/2024/TT-NHNN ngày 24 tháng 12 năm 2024 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài, có hiệu lực kể từ ngày 24 tháng 12 năm 2024 được sửa đổi, bổ sung bởi:"
+186888,25692,THAM_CHIEU,rules,0.9,Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12;
+185630,168859,SUA_DOI_BO_SUNG,rules,0.9,"SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA THÔNG TƯ SỐ 29/2024/TT-NHNN QUY ĐỊNH VỀ QUỸ TÍN DỤNG NHÂN DÂN"
+185630,177271,SUA_DOI_BO_SUNG,rules,0.9,"SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA THÔNG TƯ SỐ 01/2025/TT-NHNN QUY ĐỊNH VỀ CẤP GIẤY PHÉP LẦN ĐẦU, CẤP ĐỔI GIẤY PHÉP"
+117310,25692,THAM_CHIEU,rules,0.9,46/2010/QH12
+185630,166170,SUA_DOI_BO_SUNG,rules,0.9,"Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15 được sửa đổi, bổ sung bởi Luật số 96/2025/QH15;"
+44209,25692,THAM_CHIEU,rules,0.9,Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12 ngày 16 tháng 6 năm 2010;
+150974,133858,THAM_CHIEU,rules,0.9,"1. Chuẩn mực kiểm toán nội bộ Việt Nam và các nguyên tắc đạo đức nghề nghiệp kiểm toán nội bộ áp dụng đối với các doanh nghiệp, cơ quan nhà nước, đơn vị sự nghiệp công lập quy định tại Điều 8, Điều 9, Điều 10 Nghị định số 05/2019/NĐ-CP ngày 22 tháng 01 năm 2019 của Chính phủ về kiểm toán nội bộ và các tổ chức cá nhân có liên quan trong hoạt động kiểm toán nội bộ của các đơn vị này."
+164719,117310,THAM_CHIEU,rules,0.9,41/2016/TT-NHNN
+f69936f0-6937-11f1-a48d-29bc6b0fd706,146468,SUA_DOI_BO_SUNG,rules,0.9,"Nghị định số 156/2020/NĐ-CP ngày 31 tháng 12 năm 2020 của Chính phủ quy định xử phạt vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng khoán, có hiệu lực thi hành kể từ ngày 01 tháng 01 năm 2021, được sửa đổi, bổ sung bởi:"
+186482,25692,THAM_CHIEU,rules,0.9,Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12;
+186482,166170,SUA_DOI_BO_SUNG,rules,0.9,"Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15 được sửa đổi, bổ sung bởi Luật số 96/2025/QH15;"
+112924,95652,THAM_CHIEU,rules,0.9,135/2015/NĐ-CP
+38128,25692,THAM_CHIEU,rules,0.9,46/2010/QH12
+163441,112025,SUA_DOI_BO_SUNG,rules,0.9,"a) Nghị định số 73/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định chi tiết thi hành Luật Kinh doanh bảo hiểm và Luật sửa đổi, bổ sung một số điều của Luật Kinh doanh bảo hiểm, trừ các Điều 10, 61, 62, 63, 64, 65, 66, 67. Các Điều 10, 61, 62, 63, 64, 65, 66, 67 của Nghị định số 73/2016/NĐ-CP có hiệu lực đến hết ngày 31 tháng 12 năm 2027;"
+169221,44209,SUA_DOI_BO_SUNG,rules,0.9,"Sửa đổi, bổ sung một số điều của Thông tư số 01/2014/TT-NHNN ngày 10"
+44209,169221,THAY_THE_BOI,rules,0.9,"Điều 2. Thay thế, bổ sung và bãi bỏ một số quy định của Thông tư số 01/2014/TT-NHNN"
+163441,112025,THAM_CHIEU,rules,0.9,"a) Đối với các doanh nghiệp bảo hiểm, doanh nghiệp tái bảo hiểm đã được cấp phép trước ngày 01 tháng 01 năm 2023: Trước ngày 01 tháng 01 năm 2028, vốn điều lệ, vốn chủ sở hữu không thấp hơn vốn pháp định quy định tại Điều 10 Nghị định số 73/2016/NĐ-CP; từ ngày 01 tháng 01 năm 2028, vốn điều lệ, vốn chủ sở hữu không thấp hơn vốn điều lệ tối thiểu theo quy định tại Điều 35 Nghị định này;"
+30402,26750,THAM_CHIEU,rules,0.9,67/2011/QH12
+27257,25692,THAM_CHIEU,rules,0.9,Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12 ngày 16 tháng 6 năm 2010;
+143217,133858,THAM_CHIEU,rules,0.9,Căn cứ Nghị định số 05/2019/NĐ-CP ngày 22 thảng 01 năm 2019 của Chính phủ về kiếm toán nội bộ;
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,DoiTuongApDung_van_phong_ai_dien_to_chuc_tin_dung_,AP_DUNG_CHO,rules_fallback,0.9,"CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+THÔNG TƯ
+Quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài
+Thông tư số 56/2024/TT-NHNN ngày 24 tháng 12 năm 2024 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài, có hiệu lực kể từ ngày 24 tháng 12 năm 2024 được sửa đổi, bổ sung bởi:
+1."
+38128,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 37/2014/TT-NHNN
+Hà Nội, Ngày 26 tháng 11 năm 2014
+THÔNG TƯ
+Q
+uy định việc thiết kế mẫu tiền, chế bản và quản lý in, đúc tiền Việt Nam
+____________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số
+46/2010/QH12
+;
+Căn cứ Nghị định số
+156/2013/NĐ-CP
+ngày 11/11/2013 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số
+40/2012/NĐ-CP
+ngày 02/5/2012 của Chính phủ về nghiệp vụ phát hành tiền; bảo quản, vận chuyển tài sản quý và giấy tờ có giá trong hệ thống Ngân hàng Nhà nước, tổ chức tín dụng và chi nhánh ngân hàng nước ngoài;
+Theo đề nghị của Cục trưởng Cục Phát hành và Kho quỹ;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định việc thiết kế mẫu tiền, chế bản và quản lý in, đúc tiền Việt Nam."
+38128,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 37/2014/TT-NHNN
+Hà Nội, Ngày 26 tháng 11 năm 2014
+THÔNG TƯ
+Q
+uy định việc thiết kế mẫu tiền, chế bản và quản lý in, đúc tiền Việt Nam
+____________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số
+46/2010/QH12
+;
+Căn cứ Nghị định số
+156/2013/NĐ-CP
+ngày 11/11/2013 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số
+40/2012/NĐ-CP
+ngày 02/5/2012 của Chính phủ về nghiệp vụ phát hành tiền; bảo quản, vận chuyển tài sản quý và giấy tờ có giá trong hệ thống Ngân hàng Nhà nước, tổ chức tín dụng và chi nhánh ngân hàng nước ngoài;
+Theo đề nghị của Cục trưởng Cục Phát hành và Kho quỹ;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định việc thiết kế mẫu tiền, chế bản và quản lý in, đúc tiền Việt Nam."
+112025,LinhVuc_bao_hiem,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'bảo hiểm'
+146468,DoiTuongApDung_van_phong_ai_dien_to_chuc_tin_dung_,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức quy định tại khoản 1 Điều này bao gồm:
+a) Công ty đại chúng;
+b) Doanh nghiệp nhà nước, công ty trách nhiệm hữu hạn một thành viên do doanh nghiệp nhà nước nắm giữ 100% vốn điều lệ, đơn vị sự nghiệp công lập cổ phần hóa dưới hình thức chào bán chứng khoán ra công chúng;
+c) Tổ chức phát hành;
+d) Tổ chức niêm yết, tổ chức đăng ký giao dịch; tổ chức tư vấn niêm yết, đăng ký giao dịch;
+đ) Tổ chức kiểm toán được chấp thuận;
+e) Tổ chức tư vấn chào bán, phát hành, tổ chức bảo lãnh phát hành; tổ chức đấu thầu, đại lý phát hành;
+g) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh, văn phòng đại diện công ty chứng khoán, công ty quản lý quỹ nước ngoài tại Việt Nam, công ty đầu tư chứng khoán;
+h) Sở giao dịch chứng khoán Việt Nam và công ty con, Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam;
+i) Cổ đông, nhà đầu tư là tổ chức;
+k) Ngân hàng thương mại, chi nhánh ngân hàng nước ngoài tại Việt Nam thực hiện hoạt động lưu ký, bù trừ, thanh toán giao dịch chứng khoán; ngân hàng giám sát;
+l) Tổ chức xã hội - nghề nghiệp về chứng khoán;
+m) Các tổ chức khác hoạt động trên thị trường chứng khoán hoặc có liên quan đến hoạt động về chứng khoán và thị trường chứng khoán."
+146468,DoiTuongApDung_ngan_hang_thuong_mai,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức quy định tại khoản 1 Điều này bao gồm:
+a) Công ty đại chúng;
+b) Doanh nghiệp nhà nước, công ty trách nhiệm hữu hạn một thành viên do doanh nghiệp nhà nước nắm giữ 100% vốn điều lệ, đơn vị sự nghiệp công lập cổ phần hóa dưới hình thức chào bán chứng khoán ra công chúng;
+c) Tổ chức phát hành;
+d) Tổ chức niêm yết, tổ chức đăng ký giao dịch; tổ chức tư vấn niêm yết, đăng ký giao dịch;
+đ) Tổ chức kiểm toán được chấp thuận;
+e) Tổ chức tư vấn chào bán, phát hành, tổ chức bảo lãnh phát hành; tổ chức đấu thầu, đại lý phát hành;
+g) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh, văn phòng đại diện công ty chứng khoán, công ty quản lý quỹ nước ngoài tại Việt Nam, công ty đầu tư chứng khoán;
+h) Sở giao dịch chứng khoán Việt Nam và công ty con, Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam;
+i) Cổ đông, nhà đầu tư là tổ chức;
+k) Ngân hàng thương mại, chi nhánh ngân hàng nước ngoài tại Việt Nam thực hiện hoạt động lưu ký, bù trừ, thanh toán giao dịch chứng khoán; ngân hàng giám sát;
+l) Tổ chức xã hội - nghề nghiệp về chứng khoán;
+m) Các tổ chức khác hoạt động trên thị trường chứng khoán hoặc có liên quan đến hoạt động về chứng khoán và thị trường chứng khoán."
+146468,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức quy định tại khoản 1 Điều này bao gồm:
+a) Công ty đại chúng;
+b) Doanh nghiệp nhà nước, công ty trách nhiệm hữu hạn một thành viên do doanh nghiệp nhà nước nắm giữ 100% vốn điều lệ, đơn vị sự nghiệp công lập cổ phần hóa dưới hình thức chào bán chứng khoán ra công chúng;
+c) Tổ chức phát hành;
+d) Tổ chức niêm yết, tổ chức đăng ký giao dịch; tổ chức tư vấn niêm yết, đăng ký giao dịch;
+đ) Tổ chức kiểm toán được chấp thuận;
+e) Tổ chức tư vấn chào bán, phát hành, tổ chức bảo lãnh phát hành; tổ chức đấu thầu, đại lý phát hành;
+g) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh, văn phòng đại diện công ty chứng khoán, công ty quản lý quỹ nước ngoài tại Việt Nam, công ty đầu tư chứng khoán;
+h) Sở giao dịch chứng khoán Việt Nam và công ty con, Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam;
+i) Cổ đông, nhà đầu tư là tổ chức;
+k) Ngân hàng thương mại, chi nhánh ngân hàng nước ngoài tại Việt Nam thực hiện hoạt động lưu ký, bù trừ, thanh toán giao dịch chứng khoán; ngân hàng giám sát;
+l) Tổ chức xã hội - nghề nghiệp về chứng khoán;
+m) Các tổ chức khác hoạt động trên thị trường chứng khoán hoặc có liên quan đến hoạt động về chứng khoán và thị trường chứng khoán."
+146468,DoiTuongApDung_cong_ty_chung_khoan,AP_DUNG_CHO,rules_fallback,0.9,"Vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng khoán quy định tại Nghị định này bao gồm:
+a) Vi phạm quy định về chào bán, phát hành chứng khoán riêng lẻ;
+b) Vi phạm quy định về chào bán chứng khoán ra công chúng tại Việt Nam;
+c) Vi phạm quy định về phát hành trái phiếu ra thị trường quốc tế, chào bán chứng khoán tại nước ngoài và phát hành chứng khoán mới làm cơ sở chào bán chứng chỉ lưu ký chứng khoán tại nước ngoài hoặc hỗ trợ phát hành chứng chỉ lưu ký chứng khoán tại nước ngoài trên cơ sở cổ phiếu đã phát hành tại Việt Nam;
+d) Vi phạm quy định phát hành thêm cổ phiếu;
+đ) Vi phạm quy định về công ty đại chúng;
+e) Vi phạm quy định về chào mua công khai;
+g) Vi phạm quy định về niêm yết chứng khoán, đăng ký giao dịch chứng khoán;
+h) Vi phạm quy định về tổ chức thị trường giao dịch chứng khoán;
+i) Vi phạm quy định về kinh doanh chứng khoán và hành nghề chứng khoán; vi phạm quy định về giao dịch chứng khoán;
+k) Vi phạm quy định về đăng ký, lưu ký, bù trừ và thanh toán chứng khoán, ngân hàng giám sát, ngân hàng lưu ký;
+l) Vi phạm quy định công bố thông tin và báo cáo; vi phạm quy định về kiểm toán công ty đại chúng, tổ chức niêm yết, tổ chức thực hiện chào bán chứng khoán ra công chúng, công ty chứng khoán, công ty đầu tư chứng khoán, quỹ và công ty quản lý quỹ đầu tư chứng khoán;
+m) Vi phạm quy định về phòng, chống rửa tiền và phòng, chống khủng bố trong lĩnh vực chứng khoán và thị trường chứng khoán;
+n) Vi phạm quy định về thanh tra, kiểm tra của cơ quan nhà nước có thẩm quyền;
+o) Các vi phạm khác trong lĩnh vực chứng khoán và thị trường chứng khoán được quy định tại Nghị định này."
+26750,LinhVuc_bao_hiem,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'bảo hiểm'
+163441,DoiTuongApDung_van_phong_ai_dien_to_chuc_tin_dung_,AP_DUNG_CHO,rules_fallback,0.9,"Chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài, chi nhánh doanh nghiệp tái bảo hiểm nước ngoài (sau đây gọi là chi nhánh nước ngoài tại Việt Nam); Văn phòng đại diện của doanh nghiệp bảo hiểm nước ngoài, doanh nghiệp tái bảo hiểm nước ngoài, doanh nghiệp môi giới bảo hiểm nước ngoài, tập đoàn tài chính, bảo hiểm nước ngoài tại Việt Nam (sau đây gọi là văn phòng đại diện nước ngoài tại Việt Nam)."
+146468,DoiTuongApDung_cong_ty_quan_ly_quy,AP_DUNG_CHO,rules_fallback,0.9,"Vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng khoán quy định tại Nghị định này bao gồm:
+a) Vi phạm quy định về chào bán, phát hành chứng khoán riêng lẻ;
+b) Vi phạm quy định về chào bán chứng khoán ra công chúng tại Việt Nam;
+c) Vi phạm quy định về phát hành trái phiếu ra thị trường quốc tế, chào bán chứng khoán tại nước ngoài và phát hành chứng khoán mới làm cơ sở chào bán chứng chỉ lưu ký chứng khoán tại nước ngoài hoặc hỗ trợ phát hành chứng chỉ lưu ký chứng khoán tại nước ngoài trên cơ sở cổ phiếu đã phát hành tại Việt Nam;
+d) Vi phạm quy định phát hành thêm cổ phiếu;
+đ) Vi phạm quy định về công ty đại chúng;
+e) Vi phạm quy định về chào mua công khai;
+g) Vi phạm quy định về niêm yết chứng khoán, đăng ký giao dịch chứng khoán;
+h) Vi phạm quy định về tổ chức thị trường giao dịch chứng khoán;
+i) Vi phạm quy định về kinh doanh chứng khoán và hành nghề chứng khoán; vi phạm quy định về giao dịch chứng khoán;
+k) Vi phạm quy định về đăng ký, lưu ký, bù trừ và thanh toán chứng khoán, ngân hàng giám sát, ngân hàng lưu ký;
+l) Vi phạm quy định công bố thông tin và báo cáo; vi phạm quy định về kiểm toán công ty đại chúng, tổ chức niêm yết, tổ chức thực hiện chào bán chứng khoán ra công chúng, công ty chứng khoán, công ty đầu tư chứng khoán, quỹ và công ty quản lý quỹ đầu tư chứng khoán;
+m) Vi phạm quy định về phòng, chống rửa tiền và phòng, chống khủng bố trong lĩnh vực chứng khoán và thị trường chứng khoán;
+n) Vi phạm quy định về thanh tra, kiểm tra của cơ quan nhà nước có thẩm quyền;
+o) Các vi phạm khác trong lĩnh vực chứng khoán và thị trường chứng khoán được quy định tại Nghị định này."
+163441,DoiTuongApDung_doanh_nghiep_bao_hiem,AP_DUNG_CHO,rules_fallback,0.9,"Doanh nghiệp bảo hiểm phi nhân thọ, doanh nghiệp bảo hiểm nhân thọ, doanh nghiệp bảo hiểm sức khỏe (sau đây gọi là doanh nghiệp bảo hiểm), doanh nghiệp tái bảo hiểm, đại lý bảo hiểm, doanh nghiệp môi giới bảo hiểm, tổ chức, cá nhân cung cấp dịch vụ phụ trợ bảo hiểm, tổ chức tương hỗ cung cấp bảo hiểm vi mô."
+166170,DoiTuongApDung_van_phong_ai_dien_to_chuc_tin_dung_,AP_DUNG_CHO,rules_fallback,0.9,"Phạm vi điều chỉnh
+Luật này quy định về việc thành lập, tổ chức, hoạt động, can thiệp sớm, kiểm soát đặc biệt, tổ chức lại, giải thể, phá sản tổ chức tín dụng; việc thành lập, tổ chức, hoạt động, can thiệp sớm, giải thể, chấm dứt hoạt động của chi nhánh ngân hàng nước ngoài; việc thành lập, hoạt động của văn phòng đại diện tại Việt Nam của tổ chức tín dụng nước ngoài, tổ chức nước ngoài khác có hoạt động ngân hàng; việc xử lý nợ xấu, tài sản bảo đảm của khoản nợ xấu của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, tổ chức mà Nhà nước sở hữu 100% vốn điều lệ có chức năng mua, bán, xử lý nợ."
+166170,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"QUỐC HỘI
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+Luật số: 32/2024/QH15
+LUẬT
+CÁC TỔ CHỨC TÍN DỤNG
+Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;
+Quốc hội ban hành Luật Các tổ chức tín dụng."
+166170,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"Phạm vi điều chỉnh
+Luật này quy định về việc thành lập, tổ chức, hoạt động, can thiệp sớm, kiểm soát đặc biệt, tổ chức lại, giải thể, phá sản tổ chức tín dụng; việc thành lập, tổ chức, hoạt động, can thiệp sớm, giải thể, chấm dứt hoạt động của chi nhánh ngân hàng nước ngoài; việc thành lập, hoạt động của văn phòng đại diện tại Việt Nam của tổ chức tín dụng nước ngoài, tổ chức nước ngoài khác có hoạt động ngân hàng; việc xử lý nợ xấu, tài sản bảo đảm của khoản nợ xấu của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, tổ chức mà Nhà nước sở hữu 100% vốn điều lệ có chức năng mua, bán, xử lý nợ."
+112025,DoiTuongApDung_doanh_nghiep_bao_hiem,AP_DUNG_CHO,rules_fallback,0.9,"Nghị định này quy định chi tiết và hướng dẫn thi hành một số điều của Luật kinh doanh bảo hiểm và Luật sửa đổi, bổ sung một số điều của Luật kinh doanh bảo hiểm bao gồm:
+a) Thành lập và hoạt động của các doanh nghiệp bảo hiểm nhân thọ, doanh nghiệp bảo hiểm phi nhân thọ, doanh nghiệp bảo hiểm sức khỏe, doanh nghiệp tái bảo hiểm (sau đây gọi tắt là doanh nghiệp bảo hiểm), chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài (sau đây gọi tắt là chi nhánh nước ngoài), doanh nghiệp môi giới bảo hiểm, đại lý bảo hiểm, cung cấp dịch vụ bảo hiểm qua biên giới, văn phòng đại diện của doanh nghiệp bảo hiểm, doanh nghiệp môi giới bảo hiểm nước ngoài và quỹ bảo vệ người được bảo hiểm;
+b) Chế độ quản lý tài chính đối với các doanh nghiệp bảo hiểm, chi nhánh nước ngoài, doanh nghiệp môi giới bảo hiểm."
+112025,DoiTuongApDung_van_phong_ai_dien_to_chuc_tin_dung_,AP_DUNG_CHO,rules_fallback,0.9,"Nghị định này quy định chi tiết và hướng dẫn thi hành một số điều của Luật kinh doanh bảo hiểm và Luật sửa đổi, bổ sung một số điều của Luật kinh doanh bảo hiểm bao gồm:
+a) Thành lập và hoạt động của các doanh nghiệp bảo hiểm nhân thọ, doanh nghiệp bảo hiểm phi nhân thọ, doanh nghiệp bảo hiểm sức khỏe, doanh nghiệp tái bảo hiểm (sau đây gọi tắt là doanh nghiệp bảo hiểm), chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài (sau đây gọi tắt là chi nhánh nước ngoài), doanh nghiệp môi giới bảo hiểm, đại lý bảo hiểm, cung cấp dịch vụ bảo hiểm qua biên giới, văn phòng đại diện của doanh nghiệp bảo hiểm, doanh nghiệp môi giới bảo hiểm nước ngoài và quỹ bảo vệ người được bảo hiểm;
+b) Chế độ quản lý tài chính đối với các doanh nghiệp bảo hiểm, chi nhánh nước ngoài, doanh nghiệp môi giới bảo hiểm."
+f69936f0-6937-11f1-a48d-29bc6b0fd706,DoiTuongApDung_van_phong_ai_dien_to_chuc_tin_dung_,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức quy định tại khoản 1 Điều này bao gồm:
+a) Công ty đại chúng;
+b) Doanh nghiệp nhà nước, công ty trách nhiệm hữu hạn một thành viên do doanh nghiệp nhà nước nắm giữ 100% vốn điều lệ, đơn vị sự nghiệp công lập cổ phần hóa dưới hình thức chào bán chứng khoán ra công chúng;
+c) Tổ chức phát hành;
+d) Tổ chức niêm yết, tổ chức đăng ký giao dịch; tổ chức tư vấn niêm yết, đăng ký giao dịch;
+đ) Tổ chức kiểm toán được chấp thuận;
+e) Tổ chức tư vấn chào bán, phát hành, tổ chức bảo lãnh phát hành; tổ chức đấu thầu, đại lý phát hành;
+g) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh, văn phòng đại diện công ty chứng khoán, công ty quản lý quỹ nước ngoài tại Việt Nam, công ty đầu tư chứng khoán;
+h)
+[4]
+Sở giao dịch chứng khoán Việt Nam và công ty con; Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam và công ty con;
+i) Cổ đông, nhà đầu tư là tổ chức;
+k) Ngân hàng thương mại, chi nhánh ngân hàng nước ngoài tại Việt Nam thực hiện hoạt động lưu ký, bù trừ, thanh toán giao dịch chứng khoán, ngân hàng giám sát;
+l) Tổ chức xã hội - nghề nghiệp về chứng khoán;
+m) Các tổ chức khác hoạt động trên thị trường chứng khoán hoặc có liên quan đến hoạt động về chứng khoán và thị trường chứng khoán."
+173460,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+Số: 57/2024/TT-NHNN
+Hà Nội, ngày 24 tháng 12 năm 2024
+THÔNG TƯ
+Quy định hồ sơ, thủ tục cấp Giấy phép lần đầu
+của
+tổ chức tín dụng phi ngân hàng
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Nghị định số 102/2022/NĐ-CP ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số 162/2024/NĐ-CP ngày 20 tháng 12 năm 2024 của Chính phủ quy định điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của tổ chức tín dụng là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của tổ chức tín dụng phi ngân hàng."
+117310,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 41/2016/TT-NHNN
+Hà Nội, Ngày 30 tháng 12 năm 2016
+THÔNG TƯ
+Quy định tỷ lệ an toàn vốn đối với
+ngân hàng, chi nhánh ngân hàng nước ngoài
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số
+46/2010/QH12
+ngày 16 tháng 6 năm 2010;
+Căn cứ Luật các tổ chức tín dụng số
+47/2010/QH12
+ngày 16 tháng 6 năm 2010;
+Căn cứ Nghị định số
+156/2013/NĐ-CP
+ngày 11 tháng 11 năm 2013 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam (sau đây gọi là Ngân hàng Nhà nước) ban hành Thông tư quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài."
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+THÔNG TƯ
+Quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài
+Thông tư số 56/2024/TT-NHNN ngày 24 tháng 12 năm 2024 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài, có hiệu lực kể từ ngày 24 tháng 12 năm 2024 được sửa đổi, bổ sung bởi:
+1."
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,DoiTuongApDung_ngan_hang_thuong_mai,AP_DUNG_CHO,rules_fallback,0.9,"CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+THÔNG TƯ
+Quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài
+Thông tư số 56/2024/TT-NHNN ngày 24 tháng 12 năm 2024 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài, có hiệu lực kể từ ngày 24 tháng 12 năm 2024 được sửa đổi, bổ sung bởi:
+1."
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,LinhVuc_bao_hiem,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'bảo hiểm'
+186888,DoiTuongApDung_quy_tin_dung_nhan_dan,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức tín dụng là hợp tác xã bao gồm ngân hàng hợp tác xã, quỹ tín dụng nhân dân."
+168859,DoiTuongApDung_quy_tin_dung_nhan_dan,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 29/2024/TT-NHNN
+Hà Nội, ngày 28 tháng 6 năm 2024
+THÔNG TƯ
+Quy định về quỹ tín dụng nhân dân
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Hợp tác xã ngày 17 tháng 6 năm 2023;
+Căn cứ Nghị định số 102/2022/NĐ-CP ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về quỹ tín dụng nhân dân."
+168859,DoiTuongApDung_ngan_hang_hop_tac_xa,AP_DUNG_CHO,rules_fallback,0.9,Ngân hàng hợp tác xã.
+173695,DoiTuongApDung_ngan_hang_thuong_mai,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 56/2024/TT-NHNN
+Hà Nội, ngày 24 tháng 12 năm 2024
+THÔNG TƯ
+Quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại,
+chi nhánh ngân hàng nước ngoài
+,
+văn phòng đại diện nước ngoài
+_________________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ
+Nghị định
+số 162/NĐ-CP ngày 20 tháng 12 năm 2024 của Chính phủ
+quy định điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của
+tổ chức tín dụng
+là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước
+ngoài
+."
+27257,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+-------
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+---------------
+Số: 44/2011/TT-NHNN
+Hà Nội, ngày 29 tháng 12 năm 2011
+THÔNG TƯ
+Q
+uy định về hệ thống kiểm soát nội bộ và kiểm toán nội bộ
+của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng số 47/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ Nghị định số 96/2008/NĐ-CP ngày 26/8/2008 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Ngân hàng Nhà nước Việt Nam quy định về hệ thống kiểm soát nội bộ và kiểm toán nội bộ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài như sau:
+Chương I
+NHỮNG QUY ĐỊNH CHUNG
+Điều 1."
+27257,LinhVuc_kiem_toan,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'kiểm toán'
+173460,DoiTuongApDung_quy_tin_dung_nhan_dan,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+Số: 57/2024/TT-NHNN
+Hà Nội, ngày 24 tháng 12 năm 2024
+THÔNG TƯ
+Quy định hồ sơ, thủ tục cấp Giấy phép lần đầu
+của
+tổ chức tín dụng phi ngân hàng
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Nghị định số 102/2022/NĐ-CP ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số 162/2024/NĐ-CP ngày 20 tháng 12 năm 2024 của Chính phủ quy định điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của tổ chức tín dụng là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của tổ chức tín dụng phi ngân hàng."
+173460,DoiTuongApDung_ngan_hang_thuong_mai,AP_DUNG_CHO,rules_fallback,0.9,"Thành viên góp vốn
+là doanh nghiệp Việt Nam, ngân hàng thương mại Việt Nam, tổ chức tín dụng nước ngoài góp vốn vào tổ chức tín dụng phi ngân hàng trách nhiệm hữu hạn hai thành viên trở lên."
+27257,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+-------
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+---------------
+Số: 44/2011/TT-NHNN
+Hà Nội, ngày 29 tháng 12 năm 2011
+THÔNG TƯ
+Q
+uy định về hệ thống kiểm soát nội bộ và kiểm toán nội bộ
+của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng số 47/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ Nghị định số 96/2008/NĐ-CP ngày 26/8/2008 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Ngân hàng Nhà nước Việt Nam quy định về hệ thống kiểm soát nội bộ và kiểm toán nội bộ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài như sau:
+Chương I
+NHỮNG QUY ĐỊNH CHUNG
+Điều 1."
+143217,LinhVuc_kiem_toan,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'kiểm toán'
+164719,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 22/2023/TT-NHNN
+Hà Nội, ngày 29 tháng 12 năm 2023
+THÔNG TƯ
+Sửa đổi, bổ sung một số điều của Thông tư số
+41/2016/TT-NHNN
+ngày 30 tháng 12 năm 2016 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 16 tháng 6 năm 2010 và Luật sửa đổi, bổ sung một số điều của Luật Các tổ chức tín dụng ngày 20 tháng 11 năm 2017;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư sửa đổi, bổ sung một số điều của Thông tư số
+41/2016/TT-NHNN
+ngày 30 tháng 12 năm 2016 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài."
+164719,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 22/2023/TT-NHNN
+Hà Nội, ngày 29 tháng 12 năm 2023
+THÔNG TƯ
+Sửa đổi, bổ sung một số điều của Thông tư số
+41/2016/TT-NHNN
+ngày 30 tháng 12 năm 2016 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 16 tháng 6 năm 2010 và Luật sửa đổi, bổ sung một số điều của Luật Các tổ chức tín dụng ngày 20 tháng 11 năm 2017;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư sửa đổi, bổ sung một số điều của Thông tư số
+41/2016/TT-NHNN
+ngày 30 tháng 12 năm 2016 của Thống đốc Ngân hàng Nhà nước Việt Nam quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài."
+95652,LinhVuc_bao_hiem,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'bảo hiểm'
+133858,LinhVuc_kiem_toan,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'kiểm toán'
+f69936f0-6937-11f1-a48d-29bc6b0fd706,DoiTuongApDung_ngan_hang_thuong_mai,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức quy định tại khoản 1 Điều này bao gồm:
+a) Công ty đại chúng;
+b) Doanh nghiệp nhà nước, công ty trách nhiệm hữu hạn một thành viên do doanh nghiệp nhà nước nắm giữ 100% vốn điều lệ, đơn vị sự nghiệp công lập cổ phần hóa dưới hình thức chào bán chứng khoán ra công chúng;
+c) Tổ chức phát hành;
+d) Tổ chức niêm yết, tổ chức đăng ký giao dịch; tổ chức tư vấn niêm yết, đăng ký giao dịch;
+đ) Tổ chức kiểm toán được chấp thuận;
+e) Tổ chức tư vấn chào bán, phát hành, tổ chức bảo lãnh phát hành; tổ chức đấu thầu, đại lý phát hành;
+g) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh, văn phòng đại diện công ty chứng khoán, công ty quản lý quỹ nước ngoài tại Việt Nam, công ty đầu tư chứng khoán;
+h)
+[4]
+Sở giao dịch chứng khoán Việt Nam và công ty con; Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam và công ty con;
+i) Cổ đông, nhà đầu tư là tổ chức;
+k) Ngân hàng thương mại, chi nhánh ngân hàng nước ngoài tại Việt Nam thực hiện hoạt động lưu ký, bù trừ, thanh toán giao dịch chứng khoán, ngân hàng giám sát;
+l) Tổ chức xã hội - nghề nghiệp về chứng khoán;
+m) Các tổ chức khác hoạt động trên thị trường chứng khoán hoặc có liên quan đến hoạt động về chứng khoán và thị trường chứng khoán."
+168220,DoiTuongApDung_quy_tin_dung_nhan_dan,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+---------
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+----------------------------
+Số: 27 /2024/TT-NHNN
+Hà Nội, ngày 28 tháng 6 năm 2024
+THÔNG TƯ
+Quy định về ngân hàng hợp tác xã, việc trích nộp, quản lý và sử dụng Quỹ
+bảo đảm an toàn hệ thống quỹ tín dụng nhân dân
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Hợp tác xã ngày 20 tháng 6 năm 2023;
+Căn cứ Nghị định số 102/2022/NĐ-CP ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về ngân hàng hợp tác xã, việc trích nộp, quản lý và sử dụng Quỹ bảo đảm an toàn hệ thống quỹ tín dụng nhân dân."
+168220,DoiTuongApDung_ngan_hang_hop_tac_xa,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+---------
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+----------------------------
+Số: 27 /2024/TT-NHNN
+Hà Nội, ngày 28 tháng 6 năm 2024
+THÔNG TƯ
+Quy định về ngân hàng hợp tác xã, việc trích nộp, quản lý và sử dụng Quỹ
+bảo đảm an toàn hệ thống quỹ tín dụng nhân dân
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Hợp tác xã ngày 20 tháng 6 năm 2023;
+Căn cứ Nghị định số 102/2022/NĐ-CP ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về ngân hàng hợp tác xã, việc trích nộp, quản lý và sử dụng Quỹ bảo đảm an toàn hệ thống quỹ tín dụng nhân dân."
+168220,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+---------
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+----------------------------
+Số: 27 /2024/TT-NHNN
+Hà Nội, ngày 28 tháng 6 năm 2024
+THÔNG TƯ
+Quy định về ngân hàng hợp tác xã, việc trích nộp, quản lý và sử dụng Quỹ
+bảo đảm an toàn hệ thống quỹ tín dụng nhân dân
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Hợp tác xã ngày 20 tháng 6 năm 2023;
+Căn cứ Nghị định số 102/2022/NĐ-CP ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về ngân hàng hợp tác xã, việc trích nộp, quản lý và sử dụng Quỹ bảo đảm an toàn hệ thống quỹ tín dụng nhân dân."
+133858,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"Công tác kiểm toán nội bộ của tổ chức tín dụng thực hiện theo Luật các tổ chức tín dụng, các văn bản hướng dẫn Luật và các văn bản hướng dẫn do Ngân hàng Nhà nước ban hành."
+95652,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"CHÍNH PHỦ
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số:
+135
+/2015/NĐ-CP
+Hà Nội, ngày 31 tháng 12 năm 2015
+NGHỊ ĐỊNH
+Q
+uy định về đầu tư gián tiếp ra nước ngoài
+_____________
+Căn cứ Luật Tổ chức Chính phủ ngày 25 tháng 12 năm 2001
+;
+Căn cứ Luật Đầu tư ngày 26 tháng 11
+năm 201
+4;
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Chứng khoán ngày 29 tháng 6 năm 2006 và Luật sửa đổ
+i, bổ sung một số điề
+u của Luật Chứng khoán ngày 24 tháng 11 năm 2010;
+Căn cứ Luật Ki
+nh doanh bảo hiểm ngày 09 tháng 12 năm 2000 và Luật sửa đổ
+i, bổ
+sung một số
+điề
+u của Luật Kinh doanh bảo hiể
+m ngày 24 tháng 11 năm 2010;
+Căn cứ Pháp l
+ệnh Ngoại hối ngày 13 tháng 12 năm 2005 và Pháp l
+ệnh sửa đổi, bổ sung một số
+điều của Pháp lệnh Ngoại hố
+i ngày 18 tháng 3 năm 2013;
+Theo đề nghị của Thố
+ng đốc Ngân hàng Nhà nước Việt Nam,
+Chính phủ ban hành Nghị định quy định về đầu tư giá
+n tiếp ra nước ngoài."
+f69936f0-6937-11f1-a48d-29bc6b0fd706,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức quy định tại khoản 1 Điều này bao gồm:
+a) Công ty đại chúng;
+b) Doanh nghiệp nhà nước, công ty trách nhiệm hữu hạn một thành viên do doanh nghiệp nhà nước nắm giữ 100% vốn điều lệ, đơn vị sự nghiệp công lập cổ phần hóa dưới hình thức chào bán chứng khoán ra công chúng;
+c) Tổ chức phát hành;
+d) Tổ chức niêm yết, tổ chức đăng ký giao dịch; tổ chức tư vấn niêm yết, đăng ký giao dịch;
+đ) Tổ chức kiểm toán được chấp thuận;
+e) Tổ chức tư vấn chào bán, phát hành, tổ chức bảo lãnh phát hành; tổ chức đấu thầu, đại lý phát hành;
+g) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh, văn phòng đại diện công ty chứng khoán, công ty quản lý quỹ nước ngoài tại Việt Nam, công ty đầu tư chứng khoán;
+h)
+[4]
+Sở giao dịch chứng khoán Việt Nam và công ty con; Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam và công ty con;
+i) Cổ đông, nhà đầu tư là tổ chức;
+k) Ngân hàng thương mại, chi nhánh ngân hàng nước ngoài tại Việt Nam thực hiện hoạt động lưu ký, bù trừ, thanh toán giao dịch chứng khoán, ngân hàng giám sát;
+l) Tổ chức xã hội - nghề nghiệp về chứng khoán;
+m) Các tổ chức khác hoạt động trên thị trường chứng khoán hoặc có liên quan đến hoạt động về chứng khoán và thị trường chứng khoán."
+f69936f0-6937-11f1-a48d-29bc6b0fd706,DoiTuongApDung_cong_ty_quan_ly_quy,AP_DUNG_CHO,rules_fallback,0.9,"Vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng khoán quy định tại Nghị định này bao gồm:
+a) Vi phạm quy định về chào bán, phát hành chứng khoán riêng lẻ;
+b) Vi phạm quy định về chào bán chứng khoán ra công chúng tại Việt Nam;
+c) Vi phạm quy định về phát hành trái phiếu ra thị trường quốc tế, chào bán chứng khoán tại nước ngoài và phát hành chứng khoán mới làm cơ sở chào bán chứng chỉ lưu ký chứng khoán tại nước ngoài hoặc hỗ trợ phát hành chứng chỉ lưu ký chứng khoán tại nước ngoài trên cơ sở cổ phiếu đã phát hành tại Việt Nam;
+d) Vi phạm quy định phát hành thêm cổ phiếu;
+đ) Vi phạm quy định về công ty đại chúng;
+e) Vi phạm quy định về chào mua công khai;
+g) Vi phạm quy định về niêm yết chứng khoán, đăng ký giao dịch chứng khoán;
+h) Vi phạm quy định về tổ chức thị trường giao dịch chứng khoán;
+i) Vi phạm quy định về kinh doanh chứng khoán và hành nghề chứng khoán; vi phạm quy định về giao dịch chứng khoán;
+k) Vi phạm quy định về đăng ký, lưu ký, bù trừ và thanh toán chứng khoán, ngân hàng giám sát, ngân hàng lưu ký;
+l) Vi phạm quy định công bố thông tin và báo cáo; vi phạm quy định về kiểm toán công ty đại chúng, tổ chức niêm yết, tổ chức thực hiện chào bán chứng khoán ra công chúng, công ty chứng khoán, công ty đầu tư chứng khoán, quỹ và công ty quản lý quỹ đầu tư chứng khoán;
+m) Vi phạm quy định về phòng, chống rửa tiền và phòng, chống khủng bố trong lĩnh vực chứng khoán và thị trường chứng khoán;
+n) Vi phạm quy định về thanh tra, kiểm tra của cơ quan nhà nước có thẩm quyền;
+o) Các vi phạm khác trong lĩnh vực chứng khoán và thị trường chứng khoán được quy định tại Nghị định này."
+f69936f0-6937-11f1-a48d-29bc6b0fd706,DoiTuongApDung_cong_ty_chung_khoan,AP_DUNG_CHO,rules_fallback,0.9,"Vi phạm hành chính trong lĩnh vực chứng khoán và thị trường chứng khoán quy định tại Nghị định này bao gồm:
+a) Vi phạm quy định về chào bán, phát hành chứng khoán riêng lẻ;
+b) Vi phạm quy định về chào bán chứng khoán ra công chúng tại Việt Nam;
+c) Vi phạm quy định về phát hành trái phiếu ra thị trường quốc tế, chào bán chứng khoán tại nước ngoài và phát hành chứng khoán mới làm cơ sở chào bán chứng chỉ lưu ký chứng khoán tại nước ngoài hoặc hỗ trợ phát hành chứng chỉ lưu ký chứng khoán tại nước ngoài trên cơ sở cổ phiếu đã phát hành tại Việt Nam;
+d) Vi phạm quy định phát hành thêm cổ phiếu;
+đ) Vi phạm quy định về công ty đại chúng;
+e) Vi phạm quy định về chào mua công khai;
+g) Vi phạm quy định về niêm yết chứng khoán, đăng ký giao dịch chứng khoán;
+h) Vi phạm quy định về tổ chức thị trường giao dịch chứng khoán;
+i) Vi phạm quy định về kinh doanh chứng khoán và hành nghề chứng khoán; vi phạm quy định về giao dịch chứng khoán;
+k) Vi phạm quy định về đăng ký, lưu ký, bù trừ và thanh toán chứng khoán, ngân hàng giám sát, ngân hàng lưu ký;
+l) Vi phạm quy định công bố thông tin và báo cáo; vi phạm quy định về kiểm toán công ty đại chúng, tổ chức niêm yết, tổ chức thực hiện chào bán chứng khoán ra công chúng, công ty chứng khoán, công ty đầu tư chứng khoán, quỹ và công ty quản lý quỹ đầu tư chứng khoán;
+m) Vi phạm quy định về phòng, chống rửa tiền và phòng, chống khủng bố trong lĩnh vực chứng khoán và thị trường chứng khoán;
+n) Vi phạm quy định về thanh tra, kiểm tra của cơ quan nhà nước có thẩm quyền;
+o) Các vi phạm khác trong lĩnh vực chứng khoán và thị trường chứng khoán được quy định tại Nghị định này."
+f69936f0-6937-11f1-a48d-29bc6b0fd706,LinhVuc_quan_ly_ngoai_hoi,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'ngoại hối'
+168859,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 29/2024/TT-NHNN
+Hà Nội, ngày 28 tháng 6 năm 2024
+THÔNG TƯ
+Quy định về quỹ tín dụng nhân dân
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Hợp tác xã ngày 17 tháng 6 năm 2023;
+Căn cứ Nghị định số 102/2022/NĐ-CP ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về quỹ tín dụng nhân dân."
+186482,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+-------
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+---------------
+Số: 69/2025/TT-NHNN
+Hà Nội, ngày 31 tháng 12 năm 2025
+THÔNG TƯ
+Sửa đổi, bổ sung một số điều của một số Thông tư của Thống đốc
+Ngân hàng Nhà nước Việt Nam trong lĩnh vực quản lý, giám sát ngân hàng
+liên quan đến cắt giảm điều kiện kinh doanh,
+đơn giản hóa thủ tục hành chính
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12;
+Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15 được sửa đổi, bổ sung bởi Luật số 96/2025/QH15;
+Căn cứ Nghị định số 26/2025/NĐ-CP của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Cục trưởng Cục An toàn hệ thống các tổ chức tín dụng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư sửa đổi, bổ sung một số điều của một số Thông tư của Thống đốc Ngân hàng Nhà nước Việt Nam trong lĩnh vực quản lý, giám sát ngân hàng liên quan đến cắt giảm điều kiện kinh doanh, đơn giản hóa thủ tục hành chính."
+173695,DoiTuongApDung_van_phong_ai_dien_to_chuc_tin_dung_,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 56/2024/TT-NHNN
+Hà Nội, ngày 24 tháng 12 năm 2024
+THÔNG TƯ
+Quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại,
+chi nhánh ngân hàng nước ngoài
+,
+văn phòng đại diện nước ngoài
+_________________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ
+Nghị định
+số 162/NĐ-CP ngày 20 tháng 12 năm 2024 của Chính phủ
+quy định điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của
+tổ chức tín dụng
+là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước
+ngoài
+."
+173695,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 56/2024/TT-NHNN
+Hà Nội, ngày 24 tháng 12 năm 2024
+THÔNG TƯ
+Quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại,
+chi nhánh ngân hàng nước ngoài
+,
+văn phòng đại diện nước ngoài
+_________________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ
+Nghị định
+số 162/NĐ-CP ngày 20 tháng 12 năm 2024 của Chính phủ
+quy định điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của
+tổ chức tín dụng
+là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước
+ngoài
+."
+44209,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+-------
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+---------------
+Số: 01/2014/TT-NHNN
+Hà Nội, ngày 06 tháng 01 năm 2014
+THÔNG TƯ
+Quy định về giao nhận, bảo quản, vận chuyển
+tiền mặt, tài sản quý, giấy tờ có giá
+Căn cứ
+Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ
+Luật Các tổ chức tín dụng số 47/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ Nghị định số
+156/2013/NĐ-CP ngày 11 tháng 11 năm 2013 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số
+40/2012/NĐ-CP ngày 02 tháng 5 năm 2012 của Chính phủ về nghiệp vụ phát hành tiền; bảo quản, vận chuyển tài sản quý và giấy tờ có giá trong hệ thống Ngân hàng Nhà nước, tổ chức tín dụng và chi nhánh ngân hàng nước ngoài;
+Theo đề nghị của Cục trưởng Cục Phát hành và Kho quỹ;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về giao nhận, bảo quản, vận chuyển tiền mặt, tài sản quý, giấy tờ có giá."
+117310,DoiTuongApDung_ngan_hang_thuong_mai,AP_DUNG_CHO,rules_fallback,0.9,"Đối tượng áp dụng gồm:
+a) Ngân hàng: Ngân hàng thương mại nhà nước, ngân hàng thương mại cổ phần, ngân hàng liên doanh, ngân hàng 100% vốn nước ngoài;
+b) Chi nhánh ngân hàng nước ngoài."
+117310,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 41/2016/TT-NHNN
+Hà Nội, Ngày 30 tháng 12 năm 2016
+THÔNG TƯ
+Quy định tỷ lệ an toàn vốn đối với
+ngân hàng, chi nhánh ngân hàng nước ngoài
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số
+46/2010/QH12
+ngày 16 tháng 6 năm 2010;
+Căn cứ Luật các tổ chức tín dụng số
+47/2010/QH12
+ngày 16 tháng 6 năm 2010;
+Căn cứ Nghị định số
+156/2013/NĐ-CP
+ngày 11 tháng 11 năm 2013 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam (sau đây gọi là Ngân hàng Nhà nước) ban hành Thông tư quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài."
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,DoiTuongApDung_quy_tin_dung_nhan_dan,AP_DUNG_CHO,rules_fallback,0.9,"Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Nghị định số 102/2022/NĐ-CP ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số 162/NĐ-CP ngày 20 tháng 12 năm 2024 của Chính phủ quy định điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của tổ chức tín dụng là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài
+,
+."
+6e689cd0-6f81-11f1-94d6-fd5d6d5ff793,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"Thông tư số 12/2025/TT-NHNN ngày 30 tháng 6 năm 2025 của Thống đốc Ngân hàng Nhà nước Việt Nam sửa đổi, bổ sung một số điều của các Thông tư quy định hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước ngoài, tổ chức tín dụng phi ngân hàng, có hiệu lực từ ngày 14 tháng 8 năm 2025."
+186888,DoiTuongApDung_ngan_hang_hop_tac_xa,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức tín dụng là hợp tác xã bao gồm ngân hàng hợp tác xã, quỹ tín dụng nhân dân."
+174218,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 62/2024/TT-NHNN
+Hà Nội, ngày 31 tháng 12 năm 2024
+THÔNG TƯ
+Quy định điều kiện, hồ sơ, thủ tục chấp thuận việc tổ chức lại
+ngân hàng thương mại, tổ chức tín dụng phi ngân hàng
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Doanh nghiệp ngày 17 tháng 06 năm 2020;
+Căn cứ Luật Cạnh tranh ngày 12 tháng 6 năm 2018;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định điều kiện, hồ sơ, thủ tục chấp thuận việc tổ chức lại ngân hàng thương mại, tổ chức tín dụng phi ngân hàng."
+186888,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"Document Content
+NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+_________
+Số: 62/2025/TT-NHNN
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+________________________
+Hà Nội, ngày 31 tháng 12 năm 2025
+THÔNG TƯ
+Quy định về hệ thống kiểm soát nội bộ của tổ chức tín dụng là hợp tác xã,
+tổ chức tài chính vi mô
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12;
+Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15 được sửa đổi, bổ sung bởi Luật số 96/2025/QH15;
+Căn cứ Nghị định số 26/2025/NĐ-CP của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Cục trưởng Cục An toàn hệ thống các tổ chức tín dụng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về hệ thống kiểm soát nội bộ của tổ chức tín dụng là hợp tác xã, tổ chức tài chính vi mô."
+174218,DoiTuongApDung_ngan_hang_thuong_mai,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 62/2024/TT-NHNN
+Hà Nội, ngày 31 tháng 12 năm 2024
+THÔNG TƯ
+Quy định điều kiện, hồ sơ, thủ tục chấp thuận việc tổ chức lại
+ngân hàng thương mại, tổ chức tín dụng phi ngân hàng
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Doanh nghiệp ngày 17 tháng 06 năm 2020;
+Căn cứ Luật Cạnh tranh ngày 12 tháng 6 năm 2018;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định điều kiện, hồ sơ, thủ tục chấp thuận việc tổ chức lại ngân hàng thương mại, tổ chức tín dụng phi ngân hàng."
+173695,DoiTuongApDung_quy_tin_dung_nhan_dan,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 56/2024/TT-NHNN
+Hà Nội, ngày 24 tháng 12 năm 2024
+THÔNG TƯ
+Quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại,
+chi nhánh ngân hàng nước ngoài
+,
+văn phòng đại diện nước ngoài
+_________________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ
+Nghị định
+số 162/NĐ-CP ngày 20 tháng 12 năm 2024 của Chính phủ
+quy định điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của
+tổ chức tín dụng
+là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước
+ngoài
+."
+173695,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 56/2024/TT-NHNN
+Hà Nội, ngày 24 tháng 12 năm 2024
+THÔNG TƯ
+Quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại,
+chi nhánh ngân hàng nước ngoài
+,
+văn phòng đại diện nước ngoài
+_________________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Nghị định số
+102/2022/NĐ-CP
+ngày 12 tháng 12 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ
+Nghị định
+số 162/NĐ-CP ngày 20 tháng 12 năm 2024 của Chính phủ
+quy định điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của
+tổ chức tín dụng
+là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định
+hồ sơ, thủ tục
+cấp Giấy phép
+lần đầu
+của ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, văn phòng đại diện nước
+ngoài
+."
+186482,DoiTuongApDung_chi_nhanh_ngan_hang_nuoc_ngoai,AP_DUNG_CHO,rules_fallback,0.9,"Công ty Quản lý tài sản phát hành trái phiếu, trái phiếu đặc biệt để thanh toán cho các tổ chức tín dụng, chi nhánh ngân hàng nước ngoài bán nợ khi mua nợ xấu của các tổ chức tín dụng, chi nhánh ngân hàng nước ngoài."
+112924,LinhVuc_bao_hiem,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'bảo hiểm'
+112924,DoiTuongApDung_cong_ty_quan_ly_quy,AP_DUNG_CHO,rules_fallback,0.9,"Phạm vi điều chỉnh
+Thông tư này quy định về hoạt động tự doanh đầu tư gián tiếp ra nước ngoài của tổ chức kinh doanh chứng khoán, quỹ đầu tư chứng khoán, công ty đầu tư chứng khoán, doanh nghiệp kinh doanh bảo hiểm và hoạt động nhận ủy thác đầu tư gián tiếp ra nước ngoài của công ty quản lý quỹ."
+112924,DoiTuongApDung_cong_ty_chung_khoan,AP_DUNG_CHO,rules_fallback,0.9,"Tổ chức kinh doanh chứng khoán bao gồm công ty chứng khoán, công ty quản lý quỹ được thành lập và hoạt động theo pháp luật Việt Nam."
+112924,DoiTuongApDung_doanh_nghiep_bao_hiem,AP_DUNG_CHO,rules_fallback,0.9,"Doanh nghiệp kinh doanh bảo hiểm là doanh nghiệp bảo hiểm nhân thọ, doanh nghiệp bảo hiểm phi nhân thọ, doanh nghiệp bảo hiểm sức khỏe, doanh nghiệp tái bảo hiểm."
+25692,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"Ngân hàng Nhà nước thực hiện chức năng quản lý nhà nước về tiền tệ, hoạt động ngân hàng và ngoại hối (sau đây gọi là tiền tệ và ngân hàng); thực hiện chức năng của Ngân hàng trung ương về phát hành tiền, ngân hàng của các tổ chức tín dụng và cung ứng dịch vụ tiền tệ cho Chính phủ."
+177271,DoiTuongApDung_quy_tin_dung_nhan_dan,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 01/2025/TT-NHNN
+Hà Nội, ngày 29 tháng 4 năm 2025
+THÔNG TƯ
+Quy định
+về
+cấp Giấy phép lần đầu, cấp đổi
+Giấy phép của quỹ tín dụng nhân dân
+______________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Hợp tác xã ngày
+20
+tháng 6 năm 2023;
+Căn cứ Nghị định số 2
+6
+/202
+5
+/NĐ-CP
+ngày 2
+4
+tháng
+0
+2 năm 202
+5
+của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số
+162
+/202
+4
+/NĐ-CP ngày
+20
+tháng
+1
+2 năm 202
+4
+của Chính phủ quy định
+điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của tổ chức tín dụng là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập
+;
+Theo đề nghị của
+Cục trưởng Cục An toàn hệ thống các tổ chức tín dụng
+;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về
+cấp Giấy phép lần đầu, cấp đổi Giấy phép của quỹ tín dụng nhân dân."
+166269,LinhVuc_bao_hiem,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'bảo hiểm'
+177271,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+Số: 01/2025/TT-NHNN
+Hà Nội, ngày 29 tháng 4 năm 2025
+THÔNG TƯ
+Quy định
+về
+cấp Giấy phép lần đầu, cấp đổi
+Giấy phép của quỹ tín dụng nhân dân
+______________________
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024;
+Căn cứ Luật Hợp tác xã ngày
+20
+tháng 6 năm 2023;
+Căn cứ Nghị định số 2
+6
+/202
+5
+/NĐ-CP
+ngày 2
+4
+tháng
+0
+2 năm 202
+5
+của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số
+162
+/202
+4
+/NĐ-CP ngày
+20
+tháng
+1
+2 năm 202
+4
+của Chính phủ quy định
+điều kiện cấp Giấy phép đối với quỹ tín dụng nhân dân, tổ chức tài chính vi mô và điều kiện đối với chủ sở hữu của tổ chức tín dụng là công ty trách nhiệm hữu hạn một thành viên, cổ đông sáng lập, thành viên sáng lập
+;
+Theo đề nghị của
+Cục trưởng Cục An toàn hệ thống các tổ chức tín dụng
+;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về
+cấp Giấy phép lần đầu, cấp đổi Giấy phép của quỹ tín dụng nhân dân."
+25692,LinhVuc_bao_hiem,THUOC_LINH_VUC,rules_fallback,0.9,Chứa từ khóa 'bảo hiểm'
+185630,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+Số: 63/2025/TT-NHNN
+Hà Nội, ngày 31 tháng 12 năm 2025
+THÔNG TƯ
+Sửa đổi, bổ sung một số điều của một số Thông tư
+về quỹ tín dụng nhân dân
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12;
+Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15 được sửa đổi, bổ sung bởi Luật số 96/2025/QH15;
+Căn cứ Luật Hợp tác xã số 17/2023/QH15;
+Căn cứ Nghị định số 26/2025/NĐ-CP của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Cục trưởng Cục An toàn hệ thống các tổ chức tín dụng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư
+sửa đổi, bổ sung một số điều của một số Thông tư về quỹ tín dụng nhân dân."
+185630,DoiTuongApDung_quy_tin_dung_nhan_dan,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+Số: 63/2025/TT-NHNN
+Hà Nội, ngày 31 tháng 12 năm 2025
+THÔNG TƯ
+Sửa đổi, bổ sung một số điều của một số Thông tư
+về quỹ tín dụng nhân dân
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12;
+Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15 được sửa đổi, bổ sung bởi Luật số 96/2025/QH15;
+Căn cứ Luật Hợp tác xã số 17/2023/QH15;
+Căn cứ Nghị định số 26/2025/NĐ-CP của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Cục trưởng Cục An toàn hệ thống các tổ chức tín dụng;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư
+sửa đổi, bổ sung một số điều của một số Thông tư về quỹ tín dụng nhân dân."
+185630,DoiTuongApDung_ngan_hang_hop_tac_xa,AP_DUNG_CHO,rules_fallback,0.9,"Sửa đổi, bổ sung điểm d khoản 2 Điều 25
+“d) Định kỳ hằng quý, nộp lại sổ tiết kiệm trắng không sử dụng được cho ngân hàng hợp tác xã và mở sổ theo dõi;”."
+44209,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.9,"NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+-------
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+---------------
+Số: 01/2014/TT-NHNN
+Hà Nội, ngày 06 tháng 01 năm 2014
+THÔNG TƯ
+Quy định về giao nhận, bảo quản, vận chuyển
+tiền mặt, tài sản quý, giấy tờ có giá
+Căn cứ
+Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ
+Luật Các tổ chức tín dụng số 47/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ Nghị định số
+156/2013/NĐ-CP ngày 11 tháng 11 năm 2013 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Căn cứ Nghị định số
+40/2012/NĐ-CP ngày 02 tháng 5 năm 2012 của Chính phủ về nghiệp vụ phát hành tiền; bảo quản, vận chuyển tài sản quý và giấy tờ có giá trong hệ thống Ngân hàng Nhà nước, tổ chức tín dụng và chi nhánh ngân hàng nước ngoài;
+Theo đề nghị của Cục trưởng Cục Phát hành và Kho quỹ;
+Thống đốc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định về giao nhận, bảo quản, vận chuyển tiền mặt, tài sản quý, giấy tờ có giá."
+26750,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.5,Default fallback: Đọc hiểu văn bản luật tài chính ngân hàng.
+150974,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.5,Default fallback: Đọc hiểu văn bản luật tài chính ngân hàng.
+30402,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.5,Default fallback: Đọc hiểu văn bản luật tài chính ngân hàng.
+169221,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.5,Default fallback: Đọc hiểu văn bản luật tài chính ngân hàng.
+143217,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.5,Default fallback: Đọc hiểu văn bản luật tài chính ngân hàng.
+143217,NguoiKy_chua_xac_inh,KY_BOI,rules_fallback,0.5,Default fallback
+166269,DoiTuongApDung_to_chuc_tin_dung,AP_DUNG_CHO,rules_fallback,0.5,Default fallback: Đọc hiểu văn bản luật tài chính ngân hàng.

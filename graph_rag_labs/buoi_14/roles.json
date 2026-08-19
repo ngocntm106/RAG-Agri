@@ -1,0 +1,15 @@
+{
+  "roles": [
+    "Admin",
+    "HR",
+    "Staff",
+    "Guest"
+  ],
+  "descriptions": {
+    "Admin": "Quản trị viên toàn quyền hệ thống - truy cập toàn bộ tài liệu (HR, Risk, Staff, Public).",
+    "HR": "Bộ phận Nhân sự - quản lý tài liệu nhân sự, lương thưởng, tuyển dụng, bổ nhiệm, nội quy.",
+    "Staff": "Nhân viên chính thức - truy cập các quy định nghiệp vụ thông thường, hướng dẫn công việc và quy chế chung.",
+    "Guest": "Khách vãng lai / Thực tập sinh - chỉ truy cập các tài liệu công khai, quy định chung."
+  },
+  "default_role": "Guest"
+}

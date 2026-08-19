@@ -1,0 +1,11 @@
+question_id,question,expected_chunk_id,query_type,note
+Q01,Quy định về đóng gói tiền mặt theo Điều 4 Thông tư 01/2014/TT-NHNN,9fd88a8e-2d53-11f1-a687-91599fc7370e,EXACT_KEYWORD,Tìm đúng Điều 4 của Thông tư 01/2014/TT-NHNN
+Q02,Vốn điều lệ của doanh nghiệp bảo hiểm theo Điều 49 Nghị định 73/2016/NĐ-CP,b6935210-3049-11f1-b06a-570731b96e8a,EXACT_KEYWORD,Tìm đúng Điều 49 của Nghị định 73/2016/NĐ-CP
+Q03,Quy định về sáp nhập hợp tác xã theo Điều 95 Luật Hợp tác xã số 17/2023/QH15,93f69214-df3e-11f0-a88b-df60cdabc0d7,EXACT_KEYWORD,Tìm đúng Điều 95 của Luật Hợp tác xã số 17/2023/QH15
+Q04,Ai có thẩm quyền quyết định cấp Giấy phép đối với ngân hàng thương mại và chi nhánh ngân hàng nước ngoài?,a5e24dd0-1e98-11f1-82fa-3dadcee2abe9,SEMANTIC,Xác định thẩm quyền của Thống đốc trong cấp phép ngân hàng
+Q05,Trách nhiệm và lệnh của Thống đốc trong việc vận chuyển ngoại tệ ra nước ngoài,9ffc8ce0-2d53-11f1-9c4b-533bd8647175,SEMANTIC,Xác định quy định vận chuyển ngoại tệ cần Lệnh của Thống đốc
+Q06,Doanh nghiệp bảo hiểm có được phép từ chối bán bảo hiểm bắt buộc cho đối tượng đủ điều kiện không?,b608ec60-3049-11f1-ba30-c7aff0aedc29,SEMANTIC,Xác định quy định cấm từ chối bán bảo hiểm bắt buộc
+Q07,Điều kiện chung để được cấp Giấy phép thành lập doanh nghiệp bảo hiểm theo Nghị định 73/2016/NĐ-CP,b0cf2898-df4c-11f0-b764-49ed834c2fa9,MIXED,Kết hợp số hiệu Nghị định 73 và điều kiện thành lập
+Q08,Hồ sơ đề nghị cấp Giấy phép thành lập chi nhánh ngân hàng nước ngoài gồm những gì theo Thông tư 56/2024/TT-NHNN?,a837af8a-1e98-11f1-89ce-a71bc6e85236,MIXED,Kết hợp số hiệu Thông tư 56 và hồ sơ thành lập chi nhánh
+Q09,Quy định về việc niêm phong tiền mới in theo Thông tư 01/2014/TT-NHNN,9fdc5aba-2d53-11f1-8202-39d25e163c85,MIXED,Kết hợp số hiệu Thông tư 01 và quy cách niêm phong tiền mới in
+Q10,Điều kiện tài chính để được cấp Giấy phép thành lập doanh nghiệp môi giới bảo hiểm theo Nghị định 46/2023/NĐ-CP,3e66f670-21ad-11f1-8b62-8912fd3748c1,MIXED,Kết hợp số hiệu Nghị định 46 và điều kiện tài chính môi giới

@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "ADV_01",
+    "strategy": "fixed-size",
+    "source": "TT_02_2023_NHNN.pdf",
+    "page_start": 1,
+    "page_end": 1,
+    "text": "Theo Điều 3 Khoản 1 Thông tư 02/2023/TT-NHNN, tổ chức tín dụng, chi nhánh ngân hàng nước ngoài xem xét cơ cấu lại thời hạn trả nợ đối với số dư nợ gốc và lãi tiền vay trên cơ sở đề nghị của khách hàng và khả năng tài chính của tổ chức tín dụng."
+  },
+  {
+    "chunk_id": "ADV_02",
+    "strategy": "fixed-size",
+    "source": "TT_02_2023_NHNN.pdf",
+    "page_start": 1,
+    "page_end": 2,
+    "text": "Căn cứ Điều 3 Khoản 2 Thông tư 02/2023/TT-NHNN, việc gia hạn nợ hoặc điều chỉnh kỳ hạn trả nợ nợ gốc và lãi tiền vay được thực hiện khi khách hàng không có khả năng trả nợ đúng thời hạn theo hợp đồng tín dụng đã ký kết do gặp khó khăn trong hoạt động sản xuất kinh doanh."
+  },
+  {
+    "chunk_id": "ADV_03",
+    "strategy": "fixed-size",
+    "source": "TT_06_2023_NHNN.pdf",
+    "page_start": 2,
+    "page_end": 2,
+    "text": "Theo Điều 12 Khoản 4 Thông tư 06/2023/TT-NHNN, ngân hàng thương mại thỏa thuận về mức lãi suất cho vay ngắn hạn bằng đồng Việt Nam đối với khách hàng vay vốn đáp ứng nhu cầu vốn phục vụ một số ngành, lĩnh vực kinh tế ưu tiên."
+  },
+  {
+    "chunk_id": "ADV_04",
+    "strategy": "fixed-size",
+    "source": "TT_39_2016_NHNN.pdf",
+    "page_start": 4,
+    "page_end": 5,
+    "text": "Theo Điều 15 Khoản 1 Thông tư 39/2016/TT-NHNN, tổ chức tín dụng và khách hàng thỏa thuận về lãi suất cho vay theo cung cầu vốn thị trường, nhu cầu vay vốn và mức độ uy tín tín nhiệm của khách hàng vay."
+  },
+  {
+    "chunk_id": "ADV_05",
+    "strategy": "hierarchical",
+    "source": "TT_02_2023_NHNN.pdf",
+    "page_start": 2,
+    "page_end": 2,
+    "text": "Tổ chức tín dụng hỗ trợ giãn tiến độ thanh toán tiền gốc và nợ lãi cho các doanh nghiệp đang gặp bế tắc về dòng tiền do biến động kinh tế vĩ mô."
+  },
+  {
+    "chunk_id": "ADV_06",
+    "strategy": "hierarchical",
+    "source": "TT_02_2023_NHNN.pdf",
+    "page_start": 2,
+    "page_end": 3,
+    "text": "Các ngân hàng cho phép đơn vị sản xuất kinh doanh lùi thời điểm hoàn trả khoản vay cùng chi phí phát sinh khi doanh thu giảm sút nghiêm trọng."
+  },
+  {
+    "chunk_id": "ADV_07",
+    "strategy": "hierarchical",
+    "source": "TT_06_2023_NHNN.pdf",
+    "page_start": 3,
+    "page_end": 3,
+    "text": "Căn cứ Điều 8 Khoản 2 Thông tư 06/2023/TT-NHNN, tổ chức tín dụng không được cho vay đối với các nhu cầu vốn để thanh toán tiền mua, góp vốn cổ phần của công ty cổ phần chưa niêm yết trên thị trường chứng khoán."
+  },
+  {
+    "chunk_id": "ADV_08",
+    "strategy": "semantic",
+    "source": "OUT_OF_SCOPE.pdf",
+    "page_start": 1,
+    "page_end": 1,
+    "text": "Công thức làm bánh mì truyền thống bao gồm bột mì số 13, men nở khô, nước ấm, muối biển và một ít đường cát. Nhào bột liên tục trong 15 phút cho đến khi khối bột mịn và dẻo trước khi mang đi ủ."
+  }
+]

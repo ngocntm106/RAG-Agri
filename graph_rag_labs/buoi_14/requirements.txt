@@ -1,0 +1,7 @@
+pandas
+rank-bm25
+sentence-transformers
+beautifulsoup4
+neo4j
+python-dotenv
+streamlit
