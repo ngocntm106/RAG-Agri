@@ -1,0 +1,630 @@
+CMD: ['c:\\Users\\minhn\\OneDrive\\Desktop\\Học AI\\05_mẫu\\Rag_thuchanh\\RAG\\rag_foundation\\buoi_05\\.venv\\Scripts\\python.exe', '-m', 'pip', 'show', 'chromadb']
+RC: 0
+STDOUT:
+Name: chromadb
+Version: 1.5.9
+Summary: Chroma.
+Home-page: https://github.com/chroma-core/chroma
+Author: 
+Author-email: Jeff Huber <jeff@trychroma.com>, Anton Troynikov <anton@trychroma.com>
+License: 
+
+STDERR:
+WARNING: Ignoring invalid distribution ~treamlit (c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 210, in print_results
+    write_output("Location: %s", dist.location)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Location: %s'
+Arguments: ('c:\\Users\\minhn\\OneDrive\\Desktop\\H\u1ecdc AI\\05_m\u1eabu\\Rag_thuchanh\\RAG\\rag_foundation\\buoi_05\\.venv\\Lib\\site-packages',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 215, in print_results
+    write_output("Requires: %s", ", ".join(dist.requires))
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Requires: %s'
+Arguments: ('bcrypt, build, grpcio, httpx, importlib-resources, jsonschema, kubernetes, mmh3, numpy, onnxruntime, opentelemetry-api, opentelemetry-exporter-otlp-proto-grpc, opentelemetry-sdk, orjson, overrides, pybase64, pydantic, pydantic-settings, pypika, pyyaml, rich, tenacity, tokenizers, tqdm, typer, typing-extensions, uvicorn',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 216, in print_results
+    write_output("Required-by: %s", ", ".join(dist.required_by))
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Required-by: %s'
+Arguments: ('',)
+
+---
+CMD: ['c:\\Users\\minhn\\OneDrive\\Desktop\\Học AI\\05_mẫu\\Rag_thuchanh\\RAG\\rag_foundation\\buoi_05\\.venv\\Scripts\\python.exe', '-m', 'pip', 'show', 'google-genai']
+RC: 0
+STDOUT:
+Name: google-genai
+Version: 2.16.0
+Summary: GenAI Python SDK
+Home-page: https://github.com/googleapis/python-genai
+Author: 
+Author-email: Google LLC <googleapis-packages@google.com>
+License-Expression: Apache-2.0
+
+STDERR:
+WARNING: Ignoring invalid distribution ~treamlit (c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 210, in print_results
+    write_output("Location: %s", dist.location)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Location: %s'
+Arguments: ('c:\\Users\\minhn\\OneDrive\\Desktop\\H\u1ecdc AI\\05_m\u1eabu\\Rag_thuchanh\\RAG\\rag_foundation\\buoi_05\\.venv\\Lib\\site-packages',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 215, in print_results
+    write_output("Requires: %s", ", ".join(dist.requires))
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Requires: %s'
+Arguments: ('anyio, distro, google-auth, httpx, pydantic, requests, sniffio, tenacity, typing-extensions, websockets',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 216, in print_results
+    write_output("Required-by: %s", ", ".join(dist.required_by))
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Required-by: %s'
+Arguments: ('',)
+
+---
+CMD: ['c:\\Users\\minhn\\OneDrive\\Desktop\\Học AI\\05_mẫu\\Rag_thuchanh\\RAG\\rag_foundation\\buoi_05\\.venv\\Scripts\\python.exe', '-m', 'pip', 'show', 'python-dotenv']
+RC: 0
+STDOUT:
+Name: python-dotenv
+Version: 1.2.2
+Summary: Read key-value pairs from a .env file and set them as environment variables
+Home-page: 
+Author: 
+Author-email: Saurabh Kumar <me+github@saurabh-kumar.com>
+License: BSD-3-Clause
+
+STDERR:
+WARNING: Ignoring invalid distribution ~treamlit (c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 210, in print_results
+    write_output("Location: %s", dist.location)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Location: %s'
+Arguments: ('c:\\Users\\minhn\\OneDrive\\Desktop\\H\u1ecdc AI\\05_m\u1eabu\\Rag_thuchanh\\RAG\\rag_foundation\\buoi_05\\.venv\\Lib\\site-packages',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 215, in print_results
+    write_output("Requires: %s", ", ".join(dist.requires))
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Requires: %s'
+Arguments: ('',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 230, in emit
+    self.console.print(renderable, overflow="ignore", crop=False, style=style)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 1697, in print
+    with self:
+         ^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 870, in __exit__
+    self._exit_buffer()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 826, in _exit_buffer
+    self._check_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2038, in _check_buffer
+    self._write_buffer()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\console.py", line 2074, in _write_buffer
+    legacy_windows_render(buffer, LegacyWindowsTerm(self.file))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_windows_renderer.py", line 19, in legacy_windows_render
+    term.write_text(text)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_vendor\rich\_win32_console.py", line 402, in write_text
+    self.write(text)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ecd' in position 43: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\__main__.py", line 24, in <module>
+    sys.exit(_main())
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\main.py", line 86, in main
+    return command.main(cmd_args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 176, in main
+    return self._main(args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 255, in _main
+    return self._run_wrapper(level_number, options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\cli\base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 57, in run
+    if not print_results(
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\commands\show.py", line 216, in print_results
+    write_output("Required-by: %s", ", ".join(dist.required_by))
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\misc.py", line 403, in write_output
+    logger.info(msg, *args)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1520, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1665, in _log
+    self.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1681, in handle
+    self.callHandlers(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1737, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\minhn\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+  File "c:\Users\minhn\OneDrive\Desktop\H\u1ecdc AI\05_m\u1eabu\Rag_thuchanh\RAG\rag_foundation\buoi_05\.venv\Lib\site-packages\pip\_internal\utils\logging.py", line 232, in emit
+    self.handleError(record)
+Message: 'Required-by: %s'
+Arguments: ('pydantic-settings',)
+
+---

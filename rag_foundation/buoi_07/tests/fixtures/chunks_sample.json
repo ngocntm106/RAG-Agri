@@ -1,0 +1,42 @@
+[
+  {
+    "chunk_id": "sample-001",
+    "strategy": "hierarchical",
+    "source": "sample-a.pdf",
+    "page_start": 1,
+    "page_end": 3,
+    "text": "Chương I. Mục tiêu chung"
+  },
+  {
+    "chunk_id": "sample-002",
+    "strategy": "hierarchical",
+    "source": "sample-a.pdf",
+    "page_start": 1,
+    "page_end": 3,
+    "text": "Điều 1. Phạm vi điều chỉnh"
+  },
+  {
+    "chunk_id": "sample-003",
+    "strategy": "hierarchical",
+    "source": "sample-a.pdf",
+    "page_start": 4,
+    "page_end": 6,
+    "text": "Điều 2. Đối tượng áp dụng"
+  },
+  {
+    "chunk_id": "sample-004",
+    "strategy": "semantic",
+    "source": "sample-b.pdf",
+    "page_start": 2,
+    "page_end": 2,
+    "text": "Tóm tắt nội dung về quy trình xử lý"
+  },
+  {
+    "chunk_id": "sample-005",
+    "strategy": "fixed-size",
+    "source": "sample-c.pdf",
+    "page_start": 7,
+    "page_end": 8,
+    "text": "Đoạn văn mẫu dùng cho kiểm thử đơn giản"
+  }
+]
