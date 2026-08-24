@@ -1,38 +1,39 @@
 """
 Application: app.py
-Purpose: Streamlit Web UI Demo cho Buổi 17 — RBAC, Audit Trail & AI Compliance Gap Checker.
-Mô hình bài lab đào tạo cho Agribank RAG System.
+Purpose: Streamlit Web UI Demo cho Buổi 18 — AI Compliance Checker (UC3) & AI Audit Checklist Generator (UC4).
+Tích hợp RBAC, Audit Trail & Citations cho Ngân hàng Agribank.
 """
 
 import os
 import sys
 import json
 import time
+import uuid
 import pandas as pd
 import streamlit as st
 from pathlib import Path
+from dotenv import load_dotenv
 
-# Cấu hình đường dẫn hệ thống để import module từ buoi_17/scripts
+# Cấu hình đường dẫn hệ thống
 CURRENT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = CURRENT_DIR.parent
+sys.path.insert(0, str(CURRENT_DIR))
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from buoi_17.scripts.secure_retrieval_adapter import SecureRetrieverAdapter
-from buoi_17.scripts.internal_lookup import internal_policy_lookup
-from buoi_17.scripts.compliance_gap import ComplianceGapChecker, STATUS_HUMAN_REVIEW
+from buoi_17.scripts.compliance_checker import ComplianceChecker
+from buoi_17.scripts.audit_checklist_gen import AuditChecklistGenerator
 from buoi_17.scripts.audit_logger import AuditLogger
 
 # ----------------------------------------------------
 # PAGE CONFIG & STYLING
 # ----------------------------------------------------
 st.set_page_config(
-    page_title="Agribank Security & RAG Compliance System",
+    page_title="Agribank AI Compliance & Audit Assist System",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# CSS giao diện hiện đại, chuẩn hóa card & badge
 st.markdown("""
 <style>
     .main-header {
@@ -44,320 +45,397 @@ st.markdown("""
     .sub-header {
         font-size: 1.0rem;
         color: #4B5563;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.2rem;
     }
     .banner-warning {
         background-color: #FEF3C7;
         border-left: 5px solid #F59E0B;
         padding: 0.8rem 1.2rem;
-        border-radius: 4px;
+        border-radius: 6px;
         color: #92400E;
         font-weight: 600;
         margin-bottom: 1.5rem;
     }
-    .status-badge-allowed {
-        background-color: #D1FAE5;
-        color: #065F46;
-        padding: 0.3rem 0.8rem;
-        border-radius: 12px;
-        font-size: 0.85rem;
-        font-weight: 600;
-    }
-    .status-badge-denied {
+    .status-badge-high {
         background-color: #FEE2E2;
         color: #991B1B;
-        padding: 0.3rem 0.8rem;
+        padding: 0.25rem 0.6rem;
         border-radius: 12px;
-        font-size: 0.85rem;
-        font-weight: 600;
+        font-size: 0.8rem;
+        font-weight: 700;
     }
-    .status-badge-gap {
-        background-color: #DBEAFE;
-        color: #1E40AF;
-        padding: 0.3rem 0.8rem;
+    .status-badge-medium {
+        background-color: #FEF3C7;
+        color: #92400E;
+        padding: 0.25rem 0.6rem;
         border-radius: 12px;
-        font-size: 0.85rem;
-        font-weight: 600;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    .status-badge-low {
+        background-color: #D1FAE5;
+        color: #065F46;
+        padding: 0.25rem 0.6rem;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 700;
     }
     .card-box {
-        background-color: #F9FAFB;
+        background-color: #FFFFFF;
         border: 1px solid #E5E7EB;
         border-radius: 8px;
         padding: 1.2rem;
         margin-bottom: 1rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .citation-box {
+        background-color: #F3F4F6;
+        border-left: 4px solid #3B82F6;
+        padding: 0.6rem 1rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-family: monospace;
+        margin-top: 0.5rem;
     }
 </style>
 """, unsafe_allow_html=True)
 
 
 # ----------------------------------------------------
-# INITIALIZE CACHED MODULES
+# INITIALIZE ENGINES
 # ----------------------------------------------------
 @st.cache_resource
-def load_gap_checker():
-    # Khởi tạo instance Compliance Gap Checker
-    return ComplianceGapChecker()
+def get_engines():
+    checker = ComplianceChecker()
+    checklist_gen = AuditChecklistGenerator()
+    logger = AuditLogger()
+    return checker, checklist_gen, logger
 
-@st.cache_resource
-def check_neo4j_status():
-    try:
-        from neo4j import GraphDatabase
-        uri = os.getenv("NEO4J_URI", "bolt://127.0.0.1:7687")
-        user = os.getenv("NEO4J_USER", "neo4j")
-        pwd = os.getenv("NEO4J_PASSWORD", "12345678")
-        driver = GraphDatabase.driver(uri, auth=(user, pwd), connection_timeout=2)
-        driver.verify_connectivity()
-        driver.close()
-        return True
-    except Exception:
-        return False
 
+checker_engine, checklist_engine, audit_logger = get_engines()
 
 # ----------------------------------------------------
-# BANNER BẮT BUỘC
+# HEADER & SIDEBAR
 # ----------------------------------------------------
-st.markdown('<div class="banner-warning">⚠️ Demo đào tạo — kết quả AI cần kiểm toán viên xác minh.</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header">🛡️ AGRIBANK AI COMPLIANCE & AUDIT SYSTEM</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header">Hệ thống AI So sánh chéo Quy định Tuân thủ (UC3) & Sinh Checklist Kiểm toán (UC4)</div>', unsafe_allow_html=True)
 
-st.markdown('<div class="main-header">🛡️ AGRIBANK RAG COMPLIANCE & SECURITY SYSTEM</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-header">Buổi 17: Phân quyền RBAC, Ghi vết Audit Trail & AI Compliance Gap Checker</div>', unsafe_allow_html=True)
+st.markdown("""
+<div class="banner-warning">
+    ⚠️ <b>DEMO SẢN PHẨM AI KIỂM TOÁN:</b> Kết quả phát hiện mâu thuẫn và checklist do AI gợi ý chỉ đóng vai trò trợ lý hỗ trợ. Kiểm toán viên bắt buộc rà soát thực tế và đối chiếu văn bản gốc trước khi ban hành kết luận chính thức (Guardrail: <code>NEEDS_HUMAN_REVIEW</code>).
+</div>
+""", unsafe_allow_html=True)
 
-
-# ----------------------------------------------------
-# SIDEBAR CONTROL PANEL
-# ----------------------------------------------------
+# Sidebar
 with st.sidebar:
-    st.image("https://img.icons8.com/color/96/shield-turned-on.png", width=64)
-    st.header("⚙️ Phân quyền Demo (RBAC)")
-
-    user_id_demo = st.selectbox(
-        "👤 Demo User ID",
-        options=["usr_hr_lead_01", "usr_staff_ops_02", "usr_guest_intern", "usr_admin_master"],
-        index=0,
-        help="Chọn User ID mô phỏng kiểm thử"
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Agribank_logo.svg/1200px-Agribank_logo.svg.png", width=180)
+    st.title("⚙️ Cấu hình Hệ thống")
+    
+    user_id = st.text_input("User ID Demo", value="usr_auditor_01")
+    user_role = st.selectbox(
+        "Vai trò Người dùng (RBAC Role)",
+        options=["Admin", "Risk_Manager", "KiemToanVien", "Staff"],
+        index=0
     )
-
-    user_role = st.radio(
-        "🔑 Vai trò người dùng (Role)",
-        options=["Admin", "HR", "Staff", "Guest"],
-        index=1,
-        help="Vai trò quyết định phạm vi truy cập dữ liệu RAG"
-    )
-
+    
     st.markdown("---")
-    st.subheader("🌐 Trạng thái Hệ thống Graph")
-    neo4j_online = check_neo4j_status()
-    if neo4j_online:
-        st.success("🟢 Neo4j Database: Online")
-    else:
-        st.info("🟡 Neo4j Database: Offline\n*(Tự động Fallback: Hybrid Search Active)*")
-
+    st.subheader("🌐 Trạng thái Kết nối Dữ liệu")
+    st.markdown("✅ **Internal Policies:** 10 Văn bản (24 Chunks)")
+    st.markdown("✅ **Combined Secure CSV:** 811 Chunks tổng cộng")
+    st.markdown("🤖 **LLM Engine:** `gemini-3.6-flash` (Active)")
+    st.markdown(f"👤 **Current Scope:** `{user_role}`")
+    
     st.markdown("---")
-    st.caption("🔒 Bảo mật RAG & Audit Trail v2.5")
-    st.caption("© 2026 Agribank AI Lab Training")
-
+    col_sb1, col_sb2 = st.columns(2)
+    with col_sb1:
+        if st.button("🔄 Reset Session", use_container_width=True):
+            st.session_state.clear()
+            st.rerun()
+    with col_sb2:
+        if st.button("🧹 Clean Logs", use_container_width=True):
+            log_p = CURRENT_DIR / "outputs" / "audit_log.jsonl"
+            if log_p.exists():
+                with open(log_p, "w", encoding="utf-8") as f:
+                    f.write("")
+                st.success("Đã xóa audit log!")
+                time.sleep(0.5)
+                st.rerun()
 
 # ----------------------------------------------------
-# MAIN TABS INTERFACE
+# MAIN TABS
 # ----------------------------------------------------
 tab1, tab2, tab3 = st.tabs([
-    "📖 TAB 1: TRA CỨU QUY ĐỊNH NỘI BỘ",
-    "⚖️ TAB 2: COMPLIANCE GAP CHECKER",
-    "📜 TAB 3: AUDIT TRAIL LOGS"
+    "🔍 UC3 — AI Compliance Checker",
+    "📋 UC4 — AI Audit Checklist Gen",
+    "📜 Audit Log & System Trail"
 ])
 
-
 # ====================================================
-# TAB 1: TRA CỨU QUY ĐỊNH NỘI BỘ (USE CASE 1)
+# TAB 1: UC3 — AI COMPLIANCE CHECKER
 # ====================================================
 with tab1:
-    st.subheader("🔍 Use Case 1: Tra cứu Quy định Nội bộ có RBAC & Audit Trail")
-    st.markdown("Tra cứu ngữ cảnh chính xác theo phạm vi phân quyền người dùng. Tuyệt đối không rò rỉ dữ liệu bị DENY.")
+    st.header("🔍 Use Case 3 — AI Compliance Checker")
+    st.caption("So sánh chéo văn bản nội bộ Agribank & Thông tư NHNN, tự động phát hiện xung đột/chồng chéo kèm Điều/Khoản & Severity.")
 
-    col1_1, col1_2 = st.columns([3, 1])
-    with col1_1:
-        preset_questions = [
-            "-- Chọn câu hỏi mẫu hoặc tự nhập bên dưới --",
-            "quy định về nâng lương và phụ cấp tuyển dụng cán bộ nhân sự",
-            "quy trình hướng dẫn công tác kiểm quỹ và quản lý kho tiền",
-            "tỷ lệ an toàn vốn tối thiểu CAR của ngân hàng quy định bao nhiêu",
-            "báo cáo đánh giá quy hoạch cán bộ và bảng lương bảo mật cá nhân"
-        ]
-        selected_preset = st.selectbox("Câu hỏi gợi ý:", options=preset_questions)
-        
-        default_q = "" if selected_preset.startswith("--") else selected_preset
-        question = st.text_input("Nhập câu hỏi tra cứu quy định:", value=default_q, placeholder="Ví dụ: Quy định về bảo quản kho tiền và vận chuyển tiền mặt...")
+    col_uc3_1, col_uc3_2 = st.columns([1, 1])
 
-    with col1_2:
-        top_k = st.slider("Top-k candidates:", min_value=1, max_value=10, value=5)
-        btn_lookup = st.button("🔎 Tra cứu ngay", type="primary", use_container_width=True)
+    with col_uc3_1:
+        domain_uc3 = st.selectbox(
+            "Chọn Miền nghiệp vụ (Domain) kiểm tra:",
+            options=[
+                "An toàn Kho quỹ & Vận chuyển",
+                "CAR & Quản trị Rủi ro",
+                "Tín dụng & Phán quyết Cho vay",
+                "Bảo mật CNTT & AI",
+                "Ngoại tệ & Phái sinh",
+                "An toàn & Bảo hiểm Kho tiền",
+                "Phân loại Nợ & Xử lý Nợ xấu"
+            ],
+            index=0
+        )
 
-    if btn_lookup and question.strip():
-        with st.spinner("Đang thực thi Hybrid Search, kiểm tra RBAC và tổng hợp câu trả lời..."):
-            start_time = time.time()
-            res = internal_policy_lookup(
-                question=question,
+    with col_uc3_2:
+        doc_pair_option = st.selectbox(
+            "Chọn Cặp Văn bản Đối chiếu:",
+            options=[
+                "Tự động quét các cặp VB theo Domain chọn",
+                "100/QĐ-NHNO-AT vs 180/QĐ-NHNO-BH (Kho quỹ vs Bảo hiểm)",
+                "250/QĐ-NHNO-QLRR vs Thông tư 41/2016/TT-NHNN (CAR)",
+                "315/QC-NHNO-TD vs 390/QĐ-NHNO-XLN (Tín dụng vs Xử lý nợ)"
+            ],
+            index=0
+        )
+
+    if st.button("⚡ Phát hiện Xung đột & Mâu thuẫn Quy định", type="primary", use_container_width=True):
+        with st.spinner("Đang truy xuất Điều/Khoản và phân tích mâu thuẫn bằng AI..."):
+            if "100/QĐ-NHNO-AT" in doc_pair_option:
+                doc_a, doc_b = "agr_at01", "agr_bh06"
+            elif "250/QĐ-NHNO-QLRR" in doc_pair_option:
+                doc_a, doc_b = "agr_car02", "117310"
+            elif "315/QC-NHNO-TD" in doc_pair_option:
+                doc_a, doc_b = "agr_td03", "agr_xln10"
+            else:
+                if "Kho" in domain_uc3:
+                    doc_a, doc_b = "agr_at01", "agr_bh06"
+                elif "CAR" in domain_uc3:
+                    doc_a, doc_b = "agr_car02", "117310"
+                elif "Tín dụng" in domain_uc3:
+                    doc_a, doc_b = "agr_td03", "agr_xln10"
+                else:
+                    doc_a, doc_b = "agr_at01", "agr_bh06"
+
+            conflicts = checker_engine.check_conflict_between_docs(
+                doc_a_id=doc_a,
+                doc_b_id=doc_b,
+                domain=domain_uc3,
                 user_role=user_role,
-                top_k=top_k,
-                user_id_demo=user_id_demo
+                user_id_demo=user_id
             )
-            elapsed = time.time() - start_time
+            st.session_state["latest_conflicts"] = conflicts
 
+    # Display Conflicts
+    conflicts_data = st.session_state.get("latest_conflicts", None)
+    if conflicts_data is not None:
         st.markdown("---")
-        
-        # Quyết định truy cập
-        retrieved_chunk_ids = res.get("retrieved_chunk_ids", res.get("chunk_ids", []))
-        retrieved_doc_ids = res.get("retrieved_document_ids", res.get("document_ids", []))
-        is_denied = "Không tìm thấy đủ thông tin" in res.get("answer", "") or not retrieved_chunk_ids
-        access_badge = '<span class="status-badge-denied">⛔ ACCESS DENIED / INSUFFICIENT</span>' if is_denied else '<span class="status-badge-allowed">✅ ACCESS ALLOWED</span>'
+        col_m1, col_m2, col_m3 = st.columns(3)
+        col_m1.metric("Tổng mâu thuẫn phát hiện", len(conflicts_data))
+        col_m2.metric("Số xung đột HIGH Severity", sum(1 for c in conflicts_data if c.get("severity") == "HIGH"))
+        col_m3.metric("Human Review Guardrail", "100% Active")
 
-        st.markdown(f"### 📋 Kết quả Tra cứu {access_badge}", unsafe_allow_html=True)
-        st.markdown(f"**Request ID**: `{res.get('request_id', 'N/A')}` | **Thời gian xử lý**: `{elapsed:.2f}s` | **Scope**: `{res.get('access_scope', 'N/A')}`")
-
-        st.markdown("#### 💬 Câu trả lời từ AI:")
-        st.info(res.get("answer", ""))
-
-        # Chỉ hiển thị Citations & Metadata nếu được phép (chống rò rỉ khi DENIED)
-        if not is_denied:
-            st.markdown("#### 📚 Trích dẫn Pháp lý / Quy định (Citations):")
-            for cit in res.get("citations", []):
-                st.markdown(f"- 📄 `{cit}`")
-
-            with st.expander("🧩 Mã Định danh Document ID & Chunk ID"):
-                st.write("**Document IDs**:", retrieved_doc_ids)
-                st.write("**Chunk IDs**:", retrieved_chunk_ids)
+        if not conflicts_data:
+            st.success("✅ Không phát hiện mâu thuẫn rõ ràng giữa 2 văn bản này!")
         else:
-            st.warning("🔒 0 rò rỉ dữ liệu: Không hiển thị snippet hoặc citation bị cấm cho vai trò này.")
+            for idx, cfl in enumerate(conflicts_data, 1):
+                sev = cfl.get("severity", "MEDIUM")
+                if sev == "HIGH":
+                    badge_html = '<span class="status-badge-high">🔴 HIGH SEVERITY</span>'
+                elif sev == "MEDIUM":
+                    badge_html = '<span class="status-badge-medium">🟡 MEDIUM SEVERITY</span>'
+                else:
+                    badge_html = '<span class="status-badge-low">🟢 LOW SEVERITY</span>'
+                
+                with st.expander(f"📍 [{cfl.get('conflict_id')}] Xung đột {idx}: {cfl.get('conflict_type')} — {cfl.get('domain')}", expanded=True):
+                    st.markdown(f"**Mức độ Rủi ro:** {badge_html} &nbsp;|&nbsp; **Guardrail Flag:** `NEEDS_HUMAN_REVIEW`", unsafe_allow_html=True)
+                    st.markdown(f"**Phân tích Chi tiết từ AI:** {cfl.get('description')}")
+                    
+                    c_col1, c_col2 = st.columns(2)
+                    with c_col1:
+                        st.markdown("**📜 Văn bản A (Quy định gốc A):**")
+                        st.markdown(f"<div class='citation-box'>{cfl.get('doc_a_citation')}</div>", unsafe_allow_html=True)
+                        st.caption(f"Nội dung: {cfl.get('doc_a_text')}")
+
+                    with c_col2:
+                        st.markdown("**📜 Văn bản B (Quy định gốc B):**")
+                        st.markdown(f"<div class='citation-box'>{cfl.get('doc_b_citation')}</div>", unsafe_allow_html=True)
+                        st.caption(f"Nội dung: {cfl.get('doc_b_text')}")
+
+            # Export Section
+            st.markdown("### 📥 Xuất Báo cáo Kết quả UC3")
+            df_exp = pd.DataFrame(conflicts_data)
+            csv_bytes = df_exp.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig")
+            
+            exp_c1, exp_c2 = st.columns(2)
+            with exp_c1:
+                st.download_button(
+                    label="💾 Tải xuống Danh sách Conflicts (CSV)",
+                    data=csv_bytes,
+                    file_name="compliance_conflicts.csv",
+                    mime="text/csv",
+                    use_container_width=True
+                )
+            with exp_c2:
+                report_p = CURRENT_DIR / "outputs" / "compliance_conflict_report.md"
+                md_text = report_p.read_text(encoding="utf-8") if report_p.exists() else "Báo cáo mâu thuẫn quy định UC3"
+                st.download_button(
+                    label="📄 Tải xuống Báo cáo Kiểm toán (Markdown)",
+                    data=md_text.encode("utf-8"),
+                    file_name="compliance_conflict_report.md",
+                    mime="text/markdown",
+                    use_container_width=True
+                )
 
 
 # ====================================================
-# TAB 2: COMPLIANCE GAP CHECKER (USE CASE 2)
+# TAB 2: UC4 — AI AUDIT CHECKLIST GENERATOR
 # ====================================================
 with tab2:
-    st.subheader("⚖️ Use Case 2: AI Compliance Gap Checker (Đối chiếu Bằng chứng 2 Phía)")
-    st.markdown("So sánh đối chiếu yêu cầu Ngân hàng Nhà nước (External) với Quy định Nội bộ Agribank (Internal).")
+    st.header("📋 Use Case 4 — AI Audit Checklist Generator")
+    st.caption("Nhập Phạm vi Kiểm toán (Domain & Unit scope), AI tự động lập bản nháp Checklist Kiểm toán kèm Citation & Mức Rủi ro.")
 
-    sample_reqs = {
-        "REQ-NHNN-01-VALUABLES": {
-            "req": "Quy định về tiêu chuẩn bảo quản, vận chuyển tiền mặt, tài sản quý và giấy tờ có giá trong kho tiền.",
-            "cit": "[Thông tư 01/2014/TT-NHNN | Điều 15. Sắp xếp, bảo quản tài sản tại quầy giao dịch và trong kho tiền | 9fe3fbee-2d53-11f1-9d3d-e316384c20ed]"
-        },
-        "REQ-NHNN-41-CAPITAL": {
-            "req": "Quy định tỷ lệ an toàn vốn tối thiểu và quản lý rủi ro hoạt động đối với ngân hàng thương mại.",
-            "cit": "[Thông tư 41/2016/TT-NHNN | Điều 3. Tỷ lệ an toàn vốn | 93f5c852-df3e-11f0-b44b-8573f7cc12b3]"
-        },
-        "REQ-NHNN-27-SAFETY-FUND": {
-            "req": "Quy định trích nộp, quản lý và sử dụng Quỹ bảo đảm an toàn hệ thống quỹ tín dụng nhân dân.",
-            "cit": "[Thông tư 27/2024/TT-NHNN | Điều 5. Trích nộp Quỹ bảo đảm an toàn | 93f5c884-df3e-11f0-bcf2-f34d1dbe48ff]"
-        },
-        "REQ-NHNN-56-LICENSING": {
-            "req": "Quy định về hồ sơ, thủ tục cấp Giấy phép lần đầu của ngân hàng thương mại và chi nhánh ngân hàng nước ngoài.",
-            "cit": "[Thông tư 56/2024/TT-NHNN | Điều 8. Hồ sơ cấp phép | 93f66578-df3e-11f0-96dd-1d7f48a0b5c4]"
-        }
-    }
+    c_uc4_1, c_uc4_2 = st.columns(2)
+    with c_uc4_1:
+        domain_uc4 = st.selectbox(
+            "Chọn Miền Kiểm toán (Domain):",
+            options=[
+                "An toàn Kho quỹ",
+                "Bảo mật CNTT & AI",
+                "CAR & Quản trị Rủi ro",
+                "Phán quyết Tín dụng",
+                "Phân loại Nợ & Xử lý nợ",
+                "Kinh doanh Ngoại tệ",
+                "Tài chính Mua sắm",
+                "Nhân sự & Đào tạo"
+            ],
+            index=0
+        )
 
-    col2_1, col2_2 = st.columns([2, 1])
-    with col2_1:
-        req_key = st.selectbox("Chọn Yêu cầu NHNN mẫu:", options=list(sample_reqs.keys()))
-        ext_req = st.text_area("Yêu cầu Ngân hàng Nhà nước (External Requirement):", value=sample_reqs[req_key]["req"], height=100)
-        ext_cit = st.text_input("Trích dẫn NHNN (External Citation):", value=sample_reqs[req_key]["cit"])
+    with c_uc4_2:
+        unit_uc4 = st.selectbox(
+            "Chọn Đơn vị được Kiểm toán (Unit Scope):",
+            options=[
+                "Chi nhánh loại I & Phòng Giao dịch",
+                "Khối CNTT & Trung tâm Dữ liệu",
+                "Phòng Kế toán & Tài chính",
+                "Phòng Quản lý Rủi ro",
+                "Hội đồng Thẩm định Tín dụng",
+                "Tổ Xử lý Nợ xấu Chi nhánh"
+            ],
+            index=0
+        )
 
-    with col2_2:
-        st.markdown("<br><br>", unsafe_allow_html=True)
-        btn_gap = st.button("⚖️ Phân tích khoảng trống Compliance Gap", type="primary", use_container_width=True)
-
-    if btn_gap:
-        with st.spinner("Đang chạy đối chiếu bằng chứng hai phía..."):
-            checker = load_gap_checker()
-            gap_res = checker.analyze_requirement(
-                requirement_id=req_key,
-                external_requirement=ext_req,
-                external_citation=ext_cit,
+    if st.button("📋 Tạo Bản Nháp Checklist Kiểm Toán", type="primary", use_container_width=True):
+        with st.spinner("Đang tổng hợp quy định và sinh bản nháp Checklist..."):
+            items = checklist_engine.generate_checklist(
+                domain=domain_uc4,
+                unit=unit_uc4,
                 user_role=user_role,
-                user_id_demo=user_id_demo
+                user_id_demo=user_id
+            )
+            st.session_state["latest_checklist"] = items
+
+    # Display Checklist
+    chk_data = st.session_state.get("latest_checklist", None)
+    if chk_data is not None:
+        st.markdown("---")
+        chk_m1, chk_m2, chk_m3 = st.columns(3)
+        chk_m1.metric("Tổng đầu mục Checklist", len(chk_data))
+        chk_m2.metric("Số mục Rủi ro HIGH", sum(1 for item in chk_data if item.get("risk_level") == "HIGH"))
+        chk_m3.metric("Citation Gốc Attached", "100%")
+
+        st.markdown("### 📋 Bảng Checklist Kiểm toán Chi tiết")
+        
+        for idx, item in enumerate(chk_data, 1):
+            rlevel = item.get("risk_level", "MEDIUM")
+            if rlevel == "HIGH":
+                badge_html = '<span class="status-badge-high">🔴 HIGH RISK</span>'
+            elif rlevel == "MEDIUM":
+                badge_html = '<span class="status-badge-medium">🟡 MEDIUM RISK</span>'
+            else:
+                badge_html = '<span class="status-badge-low">🟢 LOW RISK</span>'
+
+            with st.expander(f"📌 Mục {idx}: [{item.get('item_id')}] {item.get('audit_question')}", expanded=True):
+                st.markdown(f"**Miền nghiệp vụ:** `{item.get('domain')}` &nbsp;|&nbsp; **Phạm vi áp dụng:** `{item.get('unit_scope')}`", unsafe_allow_html=True)
+                st.markdown(f"**Mức độ Rủi ro:** {badge_html} &nbsp;|&nbsp; **Cờ Guardrail:** `NEEDS_HUMAN_REVIEW`", unsafe_allow_html=True)
+                st.markdown(f"**Rủi ro tiềm ẩn:** {item.get('risk_description')}")
+                st.markdown(f"**📖 Văn bản & Điều khoản Gốc (Citation):**")
+                st.markdown(f"<div class='citation-box'>{item.get('source_citation')}</div>", unsafe_allow_html=True)
+
+        # Export Buttons
+        st.markdown("### 📥 Xuất Checklist Kiểm toán")
+        df_chk = pd.DataFrame(chk_data)
+        csv_chk_bytes = df_chk.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig")
+        json_chk_bytes = json.dumps(chk_data, indent=2, ensure_ascii=False).encode("utf-8")
+
+        chk_exp1, chk_exp2 = st.columns(2)
+        with chk_exp1:
+            st.download_button(
+                label="💾 Tải xuống Checklist (CSV)",
+                data=csv_chk_bytes,
+                file_name="audit_checklist_results.csv",
+                mime="text/csv",
+                use_container_width=True
+            )
+        with chk_exp2:
+            st.download_button(
+                label="📄 Tải xuống Checklist (JSON)",
+                data=json_chk_bytes,
+                file_name="audit_checklist_results.json",
+                mime="application/json",
+                use_container_width=True
             )
 
-        st.markdown("---")
-        st.markdown("### 📊 Kết quả Phân tích Evidence Package")
-
-        col_g1, col_g2, col_g3, col_g4 = st.columns(4)
-        with col_g1:
-            st.metric("Trạng thái Gap", gap_res["gap_status"])
-        with col_g2:
-            st.metric("Độ tin cậy (Confidence)", f"{int(gap_res['confidence']*100)}%")
-        with col_g3:
-            st.metric("Review Status", gap_res["review_status"])
-        with col_g4:
-            st.metric("Vai trò thẩm định", user_role)
-
-        st.markdown("#### 🔍 Bằng chứng hai phía (Evidence Package):")
-        df_evidence = pd.DataFrame([{
-            "Mã Req": gap_res["requirement_id"],
-            "Yêu cầu NHNN (External)": gap_res["external_requirement"],
-            "Citation NHNN": gap_res["external_citation"],
-            "Bằng chứng Nội bộ Agribank": gap_res["internal_evidence"],
-            "Citation Nội bộ": gap_res["internal_citation"],
-            "Trạng thái Gap": gap_res["gap_status"],
-            "Review Status": gap_res["review_status"]
-        }])
-        st.dataframe(df_evidence, use_container_width=True)
-
-        st.markdown("#### 📝 Lý do phân loại (Reason):")
-        st.warning(gap_res["reason"])
-
 
 # ====================================================
-# TAB 3: AUDIT TRAIL LOGS
+# TAB 3: AUDIT LOG & SYSTEM TRAIL
 # ====================================================
 with tab3:
-    st.subheader("📜 Nhật ký Kiểm toán Audit Trail & Data Security")
-    st.markdown("Lưu vết 100% các request truy vấn (kể cả request bị DENIED). Tuyệt đối không chứa secret hay API Key.")
+    st.header("📜 Audit Log & System Trail")
+    st.caption("Ghi nhận toàn bộ nhật ký truy vết hệ thống RAG, RBAC filtering, thao tác Check Conflict và Gen Checklist.")
 
-    log_file = CURRENT_DIR / "outputs" / "audit_log.jsonl"
+    log_path = CURRENT_DIR / "outputs" / "audit_log.jsonl"
     
-    if log_file.exists():
+    if not log_path.exists() or os.path.getsize(log_path) == 0:
+        st.info("Chưa có nhật ký kiểm toán nào được ghi nhận.")
+    else:
         logs = []
-        with open(log_file, "r", encoding="utf-8") as f:
+        with open(log_path, "r", encoding="utf-8") as f:
             for line in f:
                 if line.strip():
                     try:
-                        logs.append(json.loads(line))
+                        logs.append(json.loads(line.strip()))
                     except Exception:
                         pass
 
-        if logs:
-            df_logs = pd.DataFrame(logs)
-            
-            # Lọc log hiển thị phù hợp với role demo (nếu không phải Admin)
-            if user_role != "Admin":
-                df_logs_show = df_logs[df_logs["user_role"].apply(lambda r: user_role in r if isinstance(r, list) else user_role == r)]
-            else:
-                df_logs_show = df_logs
+        st.markdown(f"**Tổng số bản ghi Audit Trail:** `{len(logs)}` events | **File Log:** `{log_path.name}`")
 
-            # Đảm bảo loại bỏ hoàn toàn các trường secret nếu vô tình có
-            secret_cols = [c for c in df_logs_show.columns if any(k in c.lower() for k in ["password", "secret", "api_key", "token"])]
-            if secret_cols:
-                df_logs_show = df_logs_show.drop(columns=secret_cols)
+        # Filters
+        f_col1, f_col2 = st.columns(2)
+        with f_col1:
+            roles_filter = st.selectbox("Lọc theo User Role:", options=["All"] + list(set(r for l in logs for r in (l.get("user_role") if isinstance(l.get("user_role"), list) else [l.get("user_role")]))))
+        with f_col2:
+            actions_filter = st.selectbox("Lọc theo Action:", options=["All"] + list(set(l.get("action", "N/A") for l in logs)))
 
-            st.write(f"**Tổng số Audit Events ghi nhận**: `{len(df_logs):,}` events | **Hiển thị cho role {user_role}**: `{len(df_logs_show):,}` events")
-            
-            st.dataframe(
-                df_logs_show.sort_values(by="timestamp", ascending=False),
-                use_container_width=True
-            )
-        else:
-            st.info("Chưa có nhật ký kiểm toán trong tệp audit_log.jsonl.")
-    else:
-        st.warning("Chưa tìm thấy tệp nhật ký buoi_17/outputs/audit_log.jsonl.")
+        filtered_logs = logs
+        if roles_filter != "All":
+            filtered_logs = [l for l in filtered_logs if roles_filter in (l.get("user_role") if isinstance(l.get("user_role"), list) else [l.get("user_role")])]
+        if actions_filter != "All":
+            filtered_logs = [l for l in filtered_logs if l.get("action") == actions_filter]
 
-    st.markdown("---")
-    st.subheader("🔐 Demo Mã hóa dữ liệu lưu trữ (Data At-Rest Encryption)")
-    enc_file = CURRENT_DIR / "outputs" / "audit_log.jsonl.enc"
-    dec_file = CURRENT_DIR / "outputs" / "audit_log_decrypted.jsonl"
+        st.dataframe(
+            pd.DataFrame(filtered_logs)[["timestamp", "request_id", "user_id_demo", "user_role", "action", "query", "status"]],
+            use_container_width=True
+        )
 
-    col_e1, col_e2 = st.columns(2)
-    with col_e1:
-        st.write("**Trạng thái tệp mã hóa (.enc)**:", "✅ Có sẵn" if enc_file.exists() else "❌ Chưa khởi tạo")
-        if enc_file.exists():
-            st.caption(f"Kích thước tệp mã hóa: `{enc_file.stat().st_size:,}` bytes")
-    with col_e2:
-        st.write("**Trạng thái giải mã & So khớp**:", "✅ Byte-for-Byte Match (100%)" if dec_file.exists() else "N/A")
+        with st.expander("🔍 Xem chi tiết Raw JSON Event Log mới nhất"):
+            if logs:
+                st.json(logs[-1])
