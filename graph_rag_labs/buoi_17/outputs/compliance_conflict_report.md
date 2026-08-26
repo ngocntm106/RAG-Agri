@@ -1,9 +1,10 @@
 # BÁO CÁO PHÁT HIỆN XUNG ĐỘT TUÂN THỦ (UC3 — AI COMPLIANCE CHECKER)
 ## Hệ thống So sánh chéo Văn bản Nội bộ & Quy định NHNN Agribank
 
+- **LLM Provider:** `OLLAMA`
 - **Tổng số cặp văn bản đã kiểm tra:** 3
 - **Số lượng mâu thuẫn/xung đột phát hiện (`CONFLICTS DETECTED`):** 3
-- **Guardrail Bảo mật:** Tất cả kết quả đều gắn cờ `review_status = NEEDS_HUMAN_REVIEW`.
+- **Guardrail Bảo mật:** 100% kết quả đều gắn cờ `review_status = NEEDS_HUMAN_REVIEW`.
 
 ## 1. Danh sách Xung đột Chi tiết (`compliance_conflicts.csv`)
 | STT | Mã Conflict | Domain | Văn bản A (Citation) | Văn bản B (Citation) | Loại Xung đột | Mức độ (Severity) | Trạng thái Review |

@@ -1,11 +1,11 @@
 """
 Module: compliance_checker.py
 Purpose: Core Engine cho UC3 — AI Compliance Checker (Phát hiện xung đột & mâu thuẫn quy định nội bộ/pháp lý).
-Tích hợp AuditLogger, Evidence Package Retrieval & Gemini LLM (Model: gemini-3.6-flash).
+Tích hợp Dual-Provider (Ollama Qwen3:0.6B / Gemini), AuditLogger, Evidence Package Retrieval.
 """
 
-import os
 import sys
+import os
 import json
 import uuid
 import re
@@ -13,12 +13,33 @@ import pandas as pd
 from pathlib import Path
 from dotenv import load_dotenv
 
+# Ensure UTF-8 encoding for Windows terminal
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 CURRENT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = CURRENT_DIR.parent
+sys.path.insert(0, str(CURRENT_DIR))
 sys.path.insert(0, str(PROJECT_ROOT))
 sys.path.insert(0, str(PROJECT_ROOT.parent))
 
-from buoi_17.scripts.audit_logger import AuditLogger
+# Import AuditLogger
+try:
+    from scripts.audit_logger import AuditLogger
+except ImportError:
+    try:
+        from buoi_17.scripts.audit_logger import AuditLogger
+    except ImportError:
+        from audit_logger import AuditLogger
+
+# Import OllamaClient
+try:
+    from scripts.ollama_adapter import OllamaClient
+except ImportError:
+    try:
+        from buoi_17.scripts.ollama_adapter import OllamaClient
+    except ImportError:
+        from ollama_adapter import OllamaClient
 
 try:
     from google import genai
@@ -29,7 +50,7 @@ except ImportError:
 
 class ComplianceChecker:
     """
-    Core Engine cho UC3: AI Compliance Checker
+    Core Engine cho UC3: AI Compliance Checker hỗ trợ Dual-Provider (Ollama / Gemini).
     """
 
     def __init__(self, data_path: Path | str | None = None, env_path: Path | str | None = None):
@@ -47,13 +68,25 @@ class ComplianceChecker:
         self.df_data = pd.read_csv(self.data_path)
         self.logger = AuditLogger(log_path=CURRENT_DIR.parent / "outputs" / "audit_log.jsonl")
 
-        self.api_key = os.getenv("GEMINI_API_KEY") or os.getenv("LLM_API_KEY")
-        self.client = None
-        if HAS_GENAI and self.api_key and self.api_key != "YOUR_GEMINI_API_KEY_FREE":
+        # Đọc cấu hình Provider từ .env
+        self.llm_provider = os.getenv("LLM_PROVIDER", "ollama").lower()
+        self.ollama_client = None
+        self.gemini_client = None
+
+        if self.llm_provider == "ollama":
             try:
-                self.client = genai.Client(api_key=self.api_key)
+                self.ollama_client = OllamaClient()
+                print(f"[ComplianceChecker] Initialized OllamaClient (Base URL: {self.ollama_client.base_url}, Model: {self.ollama_client.model})", flush=True)
             except Exception as e:
-                print(f"[ComplianceChecker] Error initializing GenAI client: {e}", flush=True)
+                print(f"[ComplianceChecker] Error initializing Ollama client: {e}", flush=True)
+        elif self.llm_provider == "gemini":
+            self.api_key = os.getenv("GEMINI_API_KEY") or os.getenv("LLM_API_KEY")
+            if HAS_GENAI and self.api_key and self.api_key != "YOUR_GEMINI_API_KEY_FREE":
+                try:
+                    self.gemini_client = genai.Client(api_key=self.api_key)
+                    print("[ComplianceChecker] Initialized Gemini Client", flush=True)
+                except Exception as e:
+                    print(f"[ComplianceChecker] Error initializing GenAI client: {e}", flush=True)
 
     def get_document_chunks(self, doc_id: str) -> list[dict]:
         """Trích xuất tất cả chunks thuộc về 1 document_id hoặc so_ky_hieu."""
@@ -77,7 +110,8 @@ class ComplianceChecker:
                 "doc_a_citation": "N/A",
                 "doc_a_text": "",
                 "doc_b_citation": "N/A",
-                "doc_b_text": ""
+                "doc_b_text": "",
+                "review_status": "NEEDS_HUMAN_REVIEW"
             }
 
         ca0 = doc_a_chunks[0]
@@ -95,7 +129,8 @@ class ComplianceChecker:
                 "doc_a_citation": ca_match.get("citation"),
                 "doc_a_text": ca_match.get("text"),
                 "doc_b_citation": cb_match.get("citation"),
-                "doc_b_text": cb_match.get("text")
+                "doc_b_text": cb_match.get("text"),
+                "review_status": "NEEDS_HUMAN_REVIEW"
             }
 
         # Case 2: CAR (agr_car02 vs Thông tư 41)
@@ -110,7 +145,8 @@ class ComplianceChecker:
                 "doc_a_citation": ca_match.get("citation"),
                 "doc_a_text": ca_match.get("text"),
                 "doc_b_citation": cb_match.get("citation"),
-                "doc_b_text": cb_match.get("text")
+                "doc_b_text": cb_match.get("text"),
+                "review_status": "NEEDS_HUMAN_REVIEW"
             }
 
         # Case 3: Tín dụng (agr_td03 vs agr_xln10)
@@ -125,15 +161,15 @@ class ComplianceChecker:
                 "doc_a_citation": ca_match.get("citation"),
                 "doc_a_text": ca_match.get("text"),
                 "doc_b_citation": cb_match.get("citation"),
-                "doc_b_text": cb_match.get("text")
+                "doc_b_text": cb_match.get("text"),
+                "review_status": "NEEDS_HUMAN_REVIEW"
             }
 
-        # Try LLM if custom pair passed
-        if self.client:
-            text_a_combined = "\n".join([f"- [{c.get('article')} | {c.get('citation')}]: {c.get('text')}" for c in doc_a_chunks])
-            text_b_combined = "\n".join([f"- [{c.get('article')} | {c.get('citation')}]: {c.get('text')}" for c in doc_b_chunks])
+        # LLM Processing (Ollama / Gemini)
+        text_a_combined = "\n".join([f"- [{c.get('article', '')} | {c.get('citation', '')}]: {c.get('text', '')}" for c in doc_a_chunks])
+        text_b_combined = "\n".join([f"- [{c.get('article', '')} | {c.get('citation', '')}]: {c.get('text', '')}" for c in doc_b_chunks])
 
-            prompt = f"""Bạn là Chuyên gia Phân tích Tuân thủ và Kiểm toán Ngân hàng (Agribank).
+        prompt = f"""Bạn là Chuyên gia Phân tích Tuân thủ và Kiểm toán Ngân hàng Agribank.
 Hãy so sánh 2 Tập Bằng chứng Quy định dưới đây trong cùng lĩnh vực '{domain}' để phát hiện xem có mâu thuẫn/xung đột quy định không.
 
 === VĂN BẢN A ===
@@ -142,40 +178,60 @@ Hãy so sánh 2 Tập Bằng chứng Quy định dưới đây trong cùng lĩnh
 === VĂN BẢN B ===
 {text_b_combined}
 
-Trả về chuỗi JSON hợp lệ:
+YÊU CẦU:
+Xuất ra DUY NHẤT một chuỗi JSON hợp lệ theo cấu trúc sau (không kèm markdown):
 {{
-  "is_conflict": true/false,
+  "is_conflict": true,
   "conflict_type": "Hạn mức/ngưỡng | Quy trình thực hiện | Thẩm quyền phê duyệt | Thời hạn xử lý | KHONG_XUNG_DOT",
   "description": "Mô tả chi tiết điểm mâu thuẫn...",
   "severity": "HIGH | MEDIUM | LOW | NONE",
-  "doc_a_citation": "{ca0.get('citation')}",
-  "doc_a_text": "{ca0.get('text')}",
-  "doc_b_citation": "{cb0.get('citation')}",
-  "doc_b_text": "{cb0.get('text')}"
+  "doc_a_citation": "{ca0.get('citation', '')}",
+  "doc_a_text": "{ca0.get('text', '')[:200]}",
+  "doc_b_citation": "{cb0.get('citation', '')}",
+  "doc_b_text": "{cb0.get('text', '')[:200]}",
+  "review_status": "NEEDS_HUMAN_REVIEW"
 }}
 """
+
+        # 1. Ollama Provider
+        if self.llm_provider == "ollama" and self.ollama_client:
             try:
-                resp = self.client.models.generate_content(
-                    model="gemini-3.6-flash",
+                raw_json = self.ollama_client.generate(prompt, format_json=True, temperature=0.2)
+                parsed = json.loads(raw_json)
+                if isinstance(parsed, dict) and "is_conflict" in parsed:
+                    parsed["review_status"] = "NEEDS_HUMAN_REVIEW"
+                    return parsed
+            except Exception as e:
+                print(f"[ComplianceChecker] Ollama parse error: {e}", flush=True)
+
+        # 2. Gemini Provider
+        elif self.llm_provider == "gemini" and self.gemini_client:
+            try:
+                model_name = os.getenv("LLM_MODEL", "gemini-3.6-flash")
+                resp = self.gemini_client.models.generate_content(
+                    model=model_name,
                     contents=prompt
                 )
                 text = resp.text.strip()
                 text = re.sub(r"^```json\s*", "", text)
                 text = re.sub(r"^```\s*", "", text)
                 text = re.sub(r"\s*```$", "", text)
-                return json.loads(text)
+                parsed = json.loads(text)
+                parsed["review_status"] = "NEEDS_HUMAN_REVIEW"
+                return parsed
             except Exception as ex:
-                pass
+                print(f"[ComplianceChecker] Gemini call error: {ex}", flush=True)
 
         return {
             "is_conflict": False,
             "conflict_type": "KHONG_XUNG_DOT",
             "description": "Không phát hiện xung đột rõ ràng giữa hai văn bản quy định.",
             "severity": "NONE",
-            "doc_a_citation": ca0.get("citation"),
-            "doc_a_text": ca0.get("text"),
-            "doc_b_citation": cb0.get("citation"),
-            "doc_b_text": cb0.get("text")
+            "doc_a_citation": ca0.get("citation", ""),
+            "doc_a_text": ca0.get("text", ""),
+            "doc_b_citation": cb0.get("citation", ""),
+            "doc_b_text": cb0.get("text", ""),
+            "review_status": "NEEDS_HUMAN_REVIEW"
         }
 
     def check_conflict_between_docs(
@@ -218,7 +274,7 @@ Trả về chuỗi JSON hợp lệ:
         self.logger.log_request(
             user_id_demo=user_id_demo,
             user_role=user_role,
-            query=f"[UC3_COMPLIANCE_CHECK] Compare Doc A ({doc_a_id}) vs Doc B ({doc_b_id}) in domain '{domain}'",
+            query=f"[UC3_COMPLIANCE_CHECK] Compare Doc A ({doc_a_id}) vs Doc B ({doc_b_id}) in domain '{domain}' [Provider: {self.llm_provider}]",
             action="COMPLIANCE_CONFLICT_DETECTION",
             retrieval_method="Cross-Comparison BM25/Metadata",
             retrieved_items=chunks_a + chunks_b,
@@ -262,7 +318,7 @@ def run_compliance_checker_tests(output_dir: Path | None = None) -> tuple[pd.Dat
 
     all_conflicts = []
     print("\n" + "="*60, flush=True)
-    print("RUNNING COMPLIANCE CHECKER ENGINE TESTS (UC3)", flush=True)
+    print(f"RUNNING COMPLIANCE CHECKER ENGINE TESTS (UC3) [Provider: {checker.llm_provider.upper()}]", flush=True)
     print("="*60, flush=True)
 
     for idx, tp in enumerate(test_pairs, 1):
@@ -289,9 +345,10 @@ def run_compliance_checker_tests(output_dir: Path | None = None) -> tuple[pd.Dat
     md_lines = []
     md_lines.append("# BÁO CÁO PHÁT HIỆN XUNG ĐỘT TUÂN THỦ (UC3 — AI COMPLIANCE CHECKER)")
     md_lines.append("## Hệ thống So sánh chéo Văn bản Nội bộ & Quy định NHNN Agribank\n")
+    md_lines.append(f"- **LLM Provider:** `{checker.llm_provider.upper()}`")
     md_lines.append(f"- **Tổng số cặp văn bản đã kiểm tra:** {len(test_pairs)}")
     md_lines.append(f"- **Số lượng mâu thuẫn/xung đột phát hiện (`CONFLICTS DETECTED`):** {len(df_res)}")
-    md_lines.append(f"- **Guardrail Bảo mật:** Tất cả kết quả đều gắn cờ `review_status = NEEDS_HUMAN_REVIEW`.\n")
+    md_lines.append(f"- **Guardrail Bảo mật:** 100% kết quả đều gắn cờ `review_status = NEEDS_HUMAN_REVIEW`.\n")
 
     md_lines.append("## 1. Danh sách Xung đột Chi tiết (`compliance_conflicts.csv`)")
     md_lines.append("| STT | Mã Conflict | Domain | Văn bản A (Citation) | Văn bản B (Citation) | Loại Xung đột | Mức độ (Severity) | Trạng thái Review |")

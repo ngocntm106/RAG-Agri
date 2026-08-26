@@ -1,25 +1,56 @@
 """
 Module: internal_lookup.py
 Purpose: Use Case 1 - AI Tra cứu quy định nội bộ có phân quyền RBAC và ghi nhật ký kiểm toán (Audit Trail).
-Dự án: Buổi 17 - RBAC, Audit Trail và AI Compliance Gap Checker.
+Hỗ trợ Dual-Provider (Ollama Qwen3:0.6B / Gemini) cho Buổi 19.
 """
 
-import os
 import sys
+import os
 import json
 import uuid
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Ensure UTF-8 encoding for Windows terminal
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 CURRENT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = CURRENT_DIR.parent.parent
+PROJECT_ROOT = CURRENT_DIR.parent
+sys.path.insert(0, str(CURRENT_DIR))
 sys.path.insert(0, str(PROJECT_ROOT))
+sys.path.insert(0, str(PROJECT_ROOT.parent))
 
-from buoi_17.scripts.secure_retrieval_adapter import SecureRetrieverAdapter
-from buoi_17.scripts.audit_logger import AuditLogger
+load_dotenv(PROJECT_ROOT / ".env")
+
+try:
+    from scripts.secure_retrieval_adapter import SecureRetrieverAdapter
+except ImportError:
+    try:
+        from buoi_17.scripts.secure_retrieval_adapter import SecureRetrieverAdapter
+    except ImportError:
+        from secure_retrieval_adapter import SecureRetrieverAdapter
+
+try:
+    from scripts.audit_logger import AuditLogger
+except ImportError:
+    try:
+        from buoi_17.scripts.audit_logger import AuditLogger
+    except ImportError:
+        from audit_logger import AuditLogger
+
+try:
+    from scripts.ollama_adapter import OllamaClient
+except ImportError:
+    try:
+        from buoi_17.scripts.ollama_adapter import OllamaClient
+    except ImportError:
+        from ollama_adapter import OllamaClient
 
 # Khởi tạo singleton instances
 _adapter_instance = None
 _logger_instance = None
+_ollama_instance = None
 
 
 def get_adapter() -> SecureRetrieverAdapter:
@@ -36,29 +67,25 @@ def get_logger() -> AuditLogger:
     return _logger_instance
 
 
+def get_ollama_client() -> OllamaClient:
+    global _ollama_instance
+    if _ollama_instance is None:
+        _ollama_instance = OllamaClient()
+    return _ollama_instance
+
+
 def generate_llm_answer(question: str, context_chunks: list[dict]) -> str:
     """
     Sinh câu trả lời RAG dựa tuyệt đối trên ngữ cảnh đã qua lọc RBAC.
-    Đảm bảo nguyên tắc:
-    - Nếu không có chunk hợp lệ -> Trả về thông báo chuẩn.
-    - Không tự bịa thông tin ngoài ngữ cảnh.
-    - Trích dẫn chính xác nguồn từ citation.
+    Hỗ trợ Dual-Provider: Ollama (Local SLM) hoặc Gemini (Cloud API).
     """
     if not context_chunks:
         return "Không tìm thấy đủ thông tin trong phạm vi tài liệu được phép truy cập."
 
-    # Kiểm tra xem có thể gọi Gemini API nếu có API key
-    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("LLM_API_KEY") or os.getenv("GOOGLE_API_KEY")
-    
-    if api_key and api_key != "YOUR_GEMINI_API_KEY_FREE":
-        try:
-            import google.generativeai as genai
-            genai.configure(api_key=api_key)
-            model_name = os.getenv("LLM_MODEL", "gemini-2.5-flash")
-            model = genai.GenerativeModel(model_name)
-            
-            context_str = "\n\n".join([f"[{c['citation']}]\n{c['text']}" for c in context_chunks])
-            prompt = f"""Bạn là Trợ lý AI tra cứu quy định nội bộ Agribank.
+    llm_provider = os.getenv("LLM_PROVIDER", "ollama").lower()
+    context_str = "\n\n".join([f"[{c.get('citation', 'N/A')}]\n{c.get('text', '')}" for c in context_chunks])
+
+    prompt = f"""Bạn là Trợ lý AI tra cứu quy định nội bộ Agribank.
 Nhiệm vụ của bạn là trả lời câu hỏi dựa TUYỆT ĐỐI VÀ CHỈ DỰA VÀO ngữ cảnh tài liệu được cung cấp dưới đây.
 
 YÊU CẦU BẮT BUỘC:
@@ -72,13 +99,35 @@ NGỮ CẢNH TÀI LIỆU ĐÃ QUA LỌC RBAC:
 CÂU HỎI: {question}
 
 CÂU TRẢ LỜI:"""
-            response = model.generate_content(prompt)
-            if response and response.text:
-                return response.text.strip()
-        except Exception as e:
-            print(f"[InternalLookup] Gọi Gemini API lỗi ({e}), chuyển sang chế độ Grounded Synthesizer...")
 
-    # Chế độ Grounded Synthesizer (Fallback an toàn tuyệt đối khi không có API key)
+    # 1. Ollama Provider
+    if llm_provider == "ollama":
+        try:
+            ollama = get_ollama_client()
+            is_online, _ = ollama.check_health()
+            if is_online:
+                resp = ollama.generate(prompt, format_json=False, temperature=0.2)
+                if resp and not resp.startswith("[FALLBACK"):
+                    return resp.strip()
+        except Exception as e:
+            print(f"[InternalLookup] Ollama generation exception: {e}", flush=True)
+
+    # 2. Gemini Provider
+    elif llm_provider == "gemini":
+        api_key = os.getenv("GEMINI_API_KEY") or os.getenv("LLM_API_KEY") or os.getenv("GOOGLE_API_KEY")
+        if api_key and api_key != "YOUR_GEMINI_API_KEY_FREE":
+            try:
+                import google.generativeai as genai
+                genai.configure(api_key=api_key)
+                model_name = os.getenv("LLM_MODEL", "gemini-2.5-flash")
+                model = genai.GenerativeModel(model_name)
+                response = model.generate_content(prompt)
+                if response and response.text:
+                    return response.text.strip()
+            except Exception as e:
+                print(f"[InternalLookup] Gọi Gemini API lỗi ({e}), chuyển sang chế độ Grounded Synthesizer...", flush=True)
+
+    # 3. Grounded Synthesizer Fallback
     citations_used = []
     answer_bullets = []
     for c in context_chunks:
@@ -106,17 +155,6 @@ def internal_policy_lookup(
 ) -> dict:
     """
     Hàm chính cho Use Case 1: Tra cứu quy định nội bộ phân quyền RBAC.
-    
-    Returns dict:
-        - question
-        - user_role
-        - answer
-        - citations
-        - document_ids
-        - chunk_ids
-        - access_scope
-        - request_id
-        - status
     """
     request_id = str(uuid.uuid4())
     adapter = get_adapter()
@@ -189,11 +227,10 @@ def internal_policy_lookup(
 
 
 if __name__ == "__main__":
-    # Chạy thử nghiệm nhanh
     demo_res = internal_policy_lookup(
-        question="quy định về tuyển dụng và nâng lương cán bộ",
-        user_role="HR",
-        user_id_demo="usr_hr_test"
+        question="quy định về an toàn kho quỹ và vận chuyển tiền mặt",
+        user_role="Admin",
+        user_id_demo="usr_admin_test"
     )
     print("=== DEMO RUN RESULT ===")
     print("Request ID:", demo_res["request_id"])

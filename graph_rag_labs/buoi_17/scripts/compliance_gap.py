@@ -1,22 +1,52 @@
 """
 Module: compliance_gap.py
-Purpose: AI Compliance Gap Checker cho Buổi 17.
+Purpose: AI Compliance Gap Checker cho Buổi 17 & 19.
 So sánh đối chiếu bằng chứng hai phía giữa Yêu cầu NHNN (External Requirement) và Quy định Nội bộ (Internal Policy Agribank).
-Sử dụng tệp combined buoi_17/data/chunks_combined_secure.csv khi đã sẵn sàng (COMPLIANCE GAP DATA: READY).
+Hỗ trợ Dual-Provider (Ollama / Gemini) và giữ vững cờ NEEDS_HUMAN_REVIEW.
 """
 
-import os
 import sys
+import os
 import json
 import pandas as pd
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Ensure UTF-8 encoding for Windows terminal
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 CURRENT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = CURRENT_DIR.parent.parent
+PROJECT_ROOT = CURRENT_DIR.parent
+sys.path.insert(0, str(CURRENT_DIR))
 sys.path.insert(0, str(PROJECT_ROOT))
+sys.path.insert(0, str(PROJECT_ROOT.parent))
 
-from buoi_17.scripts.secure_retrieval_adapter import SecureRetrieverAdapter
-from buoi_17.scripts.audit_logger import AuditLogger
+load_dotenv(PROJECT_ROOT / ".env")
+
+try:
+    from scripts.secure_retrieval_adapter import SecureRetrieverAdapter
+except ImportError:
+    try:
+        from buoi_17.scripts.secure_retrieval_adapter import SecureRetrieverAdapter
+    except ImportError:
+        from secure_retrieval_adapter import SecureRetrieverAdapter
+
+try:
+    from scripts.audit_logger import AuditLogger
+except ImportError:
+    try:
+        from buoi_17.scripts.audit_logger import AuditLogger
+    except ImportError:
+        from audit_logger import AuditLogger
+
+try:
+    from scripts.ollama_adapter import OllamaClient
+except ImportError:
+    try:
+        from buoi_17.scripts.ollama_adapter import OllamaClient
+    except ImportError:
+        from ollama_adapter import OllamaClient
 
 STATUS_DAP_UNG = "DAP_UNG"
 STATUS_THIEU = "THIEU"
@@ -25,7 +55,7 @@ STATUS_CHUA_DU_BANG_CHUNG = "CHUA_DU_BANG_CHUNG"
 STATUS_HUMAN_REVIEW = "NEEDS_HUMAN_REVIEW"
 
 COMBINED_SECURE_CSV = CURRENT_DIR.parent / "data" / "chunks_combined_secure.csv"
-DEFAULT_SECURE_CSV = PROJECT_ROOT / "buoi_14" / "data" / "processed" / "chunks_secure.csv"
+DEFAULT_SECURE_CSV = PROJECT_ROOT.parent / "buoi_14" / "data" / "processed" / "chunks_secure.csv"
 
 
 class ComplianceGapChecker:
@@ -41,6 +71,14 @@ class ComplianceGapChecker:
         self.adapter = SecureRetrieverAdapter(corpus_path=self.data_path)
         self.logger = AuditLogger()
         self.df_data = pd.read_csv(self.data_path)
+        self.llm_provider = os.getenv("LLM_PROVIDER", "ollama").lower()
+        self.ollama_client = None
+
+        if self.llm_provider == "ollama":
+            try:
+                self.ollama_client = OllamaClient()
+            except Exception as e:
+                print(f"[ComplianceGap] Error init OllamaClient: {e}", flush=True)
 
     def analyze_requirement(
         self,
@@ -112,7 +150,7 @@ class ComplianceGapChecker:
         self.logger.log_request(
             user_id_demo=user_id_demo,
             user_role=user_role,
-            query=f"[COMPLIANCE_CHECK] {requirement_id}: {external_requirement[:100]}",
+            query=f"[COMPLIANCE_CHECK] {requirement_id}: {external_requirement[:100]} [Provider: {self.llm_provider}]",
             action="COMPLIANCE_GAP_ANALYSIS",
             retrieval_method="Hybrid + Rerank (Secure)",
             retrieved_items=candidates,
